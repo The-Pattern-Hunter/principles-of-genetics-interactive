@@ -13,6 +13,8 @@ This repository hosts interactive Jupyter/Colab notebooks and datasets that acco
 
 ## Quick links
 - Unit 1 — Mendelian Genetics (Colab): https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/Unit1_Mendelian_Genetics.ipynb
+  [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/Unit1_Mendelian_Genetics.ipynb)
+
 
 ## License
 Code and notebooks: CC-BY-NC 4.0. Book text: © Alok Patel (All rights reserved).
