@@ -1,191 +1,379 @@
-# Interactive Linkage Mapping Tutorial
+# Principles of Genetics: Interactive Notebooks 🧬
 
-An interactive Jupyter notebook for teaching genetic linkage mapping using 2-point and 3-point crosses. Perfect for biology students learning genetics!
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/The-Pattern-Hunter/principles-of-genetics-interactive/HEAD?labpath=notebooks)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/YOUR_USERNAME/linkage-mapping-tutorial/blob/main/linkage_mapping_interactive.ipynb)
-
-## 🧬 Features
-
-- **Interactive Visualizations**: Adjust parameters using sliders and see results in real-time
-- **Two-Point Cross Analysis**: 
-  - Calculate recombination frequencies
-  - Determine if genes are linked
-  - Visualize gene positions on chromosomes
-  
-- **Three-Point Cross Analysis**:
-  - Determine gene order
-  - Calculate map distances
-  - Analyze interference and coefficient of coincidence
-  - Visualize crossover events
-
-- **Educational Content**:
-  - Clear explanations of concepts
-  - Practice problems
-  - Real-world Drosophila examples
-  - Interpretation guides
-
-## 🚀 Quick Start - Google Colab (Recommended)
-
-The easiest way to use this tutorial:
-
-1. **Click the "Open in Colab" badge above** (or use this link after you upload to GitHub)
-2. The notebook will open in Google Colab
-3. Click **Runtime** → **Run all** (or run cells individually)
-4. Start adjusting the sliders and exploring!
-
-**No installation required!** Everything runs in your browser.
-
-## 📚 What You'll Learn
-
-### Two-Point Crosses
-- Understanding genetic linkage
-- Calculating recombination frequency (RF)
-- Converting RF to map units (centiMorgans)
-- Determining linkage vs. independent assortment
-
-### Three-Point Crosses
-- Determining gene order on chromosomes
-- Calculating distances between multiple genes
-- Understanding double crossovers
-- Calculating coefficient of coincidence (COC)
-- Interpreting interference
-
-## 🎯 Learning Objectives
-
-By the end of this tutorial, students will be able to:
-
-1. ✓ Calculate recombination frequencies from genetic cross data
-2. ✓ Determine whether genes are linked or independently assorting
-3. ✓ Construct genetic maps showing gene positions
-4. ✓ Determine gene order using three-point cross data
-5. ✓ Calculate and interpret interference values
-6. ✓ Understand the relationship between map distance and physical distance
-
-## 📖 Using This Tutorial
-
-### For Students:
-
-1. **Start with the Introduction**: Read through the concepts before using the simulators
-2. **Use Interactive Sliders**: Adjust parameters to see how results change
-3. **Try Practice Problems**: Use the simulators to solve the provided problems
-4. **Experiment**: Create your own scenarios and predict outcomes
-5. **Check Interpretations**: Read the automated interpretations to understand your results
-
-### For Instructors:
-
-This notebook can be used for:
-- **Lecture demonstrations**: Project and manipulate parameters live
-- **Lab assignments**: Students complete practice problems
-- **Homework**: Assign specific parameter ranges for exploration
-- **Exam prep**: Students use it to study and verify their calculations
-
-## 🛠️ Technical Requirements
-
-### Google Colab (Recommended)
-- Just a web browser
-- No installation needed
-- Free to use
-
-### Local Installation (Optional)
-
-If you want to run locally:
-
-```bash
-# Clone the repository
-git clone https://github.com/YOUR_USERNAME/linkage-mapping-tutorial.git
-cd linkage-mapping-tutorial
-
-# Install dependencies
-pip install jupyter ipywidgets matplotlib numpy pandas seaborn
-
-# Enable widgets
-jupyter nbextension enable --py widgetsnbextension
-
-# Launch Jupyter
-jupyter notebook linkage_mapping_interactive.ipynb
-```
-
-### Requirements
-- Python 3.7+
-- jupyter
-- ipywidgets
-- matplotlib
-- numpy
-- pandas
-- seaborn
-
-## 📋 Contents Overview
-
-1. **Introduction to Genetic Linkage**
-   - Key concepts and definitions
-   - Relationship between recombination and distance
-
-2. **Two-Point Cross Analysis**
-   - Interactive simulator with adjustable parameters
-   - Visualization of chromosome maps
-   - Recombination frequency calculations
-
-3. **Three-Point Cross Analysis**
-   - Interactive simulator for three genes
-   - Gene order determination
-   - Interference calculations
-   - Crossover visualization
-
-4. **Practice Problems**
-   - Guided problems with solutions
-   - Use simulators to verify answers
-
-5. **Real-World Example**
-   - Classic Drosophila three-point cross
-   - Application to actual genetic data
-
-## 🎓 Educational Philosophy
-
-This tutorial follows modern educational principles:
-
-- **Interactive Learning**: Students actively manipulate parameters
-- **Immediate Feedback**: Results appear instantly
-- **Visual Learning**: Complex concepts shown graphically
-- **Scaffolded Learning**: Progress from simple to complex
-- **Real-World Context**: Examples from actual genetics research
-
-## 🤝 Contributing
-
-Contributions are welcome! If you find bugs or have suggestions:
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-## 📝 License
-
-This educational resource is released under the MIT License. Feel free to use, modify, and distribute for educational purposes.
-
-## 👨‍🔬 Author
-
-Created for biology students studying genetics and chromosome mapping.
-
-## 🔗 Related Resources
-
-- Classical genetics papers
-- Modern genomic mapping techniques
-- GWAS (Genome-Wide Association Studies)
-- Molecular markers and genetic mapping
-
-## 📧 Feedback
-
-Found this helpful? Have suggestions? Please open an issue on GitHub or contribute improvements!
-
-## 🌟 Acknowledgments
-
-Based on classical genetic mapping techniques developed by:
-- Thomas Hunt Morgan (Drosophila genetics)
-- Alfred Sturtevant (First genetic map, 1913)
-- Modern genetics educators and researchers
+> **Interactive visualizations and simulations to bridge the gap between Mendelian genetics and population genetics**
 
 ---
 
-**Happy Learning! 🧬📚**
+## 🎯 Overview
 
-*Remember: Genetics is best learned by doing. Use these interactive tools to explore, experiment, and understand!*
+These Jupyter notebooks provide **hands-on, interactive learning experiences** for undergraduate and graduate students studying genetics. Each notebook uses Python visualizations and interactive widgets to make complex genetic concepts intuitive and engaging.
+
+### **Why These Notebooks?**
+
+Traditional genetics education often creates an artificial divide between:
+- **Family-level (Mendelian) genetics** - Punnett squares, inheritance patterns
+- **Population-level genetics** - Hardy-Weinberg, allele frequencies, evolution
+
+These notebooks show that **it's all the same mechanism operating at different scales!**
+
+---
+
+## 📚 Notebooks
+
+### 1. **From Family to Population Bridge** 🌉
+**File:** `family_to_population_bridge.ipynb`
+
+[![Open in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/The-Pattern-Hunter/principles-of-genetics-interactive/HEAD?labpath=notebooks/family_to_population_bridge.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/family_to_population_bridge.ipynb)
+
+**Learning Objectives:**
+- Understand how population patterns emerge from individual Mendelian inheritance
+- Visualize the transition from family crosses to population-level allele frequencies
+- Explore Hardy-Weinberg equilibrium through simulation
+- See how natural selection changes allele frequencies over generations
+
+**Key Features:**
+- Interactive Punnett square visualization
+- Zoom-out simulation: from 1 family to 10,000 families
+- Real-time Hardy-Weinberg calculations
+- Multi-generational evolution simulator with selection
+
+**Perfect for:** Understanding the conceptual bridge between classical and population genetics
+
+---
+
+### 2. **Linkage vs Linkage Disequilibrium** 🔗
+**File:** `linkage_vs_LD_tutorial.ipynb`
+
+[![Open in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/The-Pattern-Hunter/principles-of-genetics-interactive/HEAD?labpath=notebooks/linkage_vs_LD_tutorial.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/linkage_vs_LD_tutorial.ipynb)
+
+**Learning Objectives:**
+- Distinguish between **linkage** (physical proximity) and **linkage disequilibrium** (allelic association)
+- Visualize LD decay over generations
+- Understand factors affecting LD persistence
+- Apply concepts to GWAS and evolutionary genetics
+
+**Key Features:**
+- Side-by-side comparison of linkage and LD
+- Interactive LD decay simulation
+- D' and r² calculation and visualization
+- Real-world applications in genetics research
+
+**Perfect for:** Graduate students and researchers working with genomic data
+
+---
+
+### 3. **Interactive Linkage Mapping** 🗺️
+**File:** `linkage_mapping_interactive.ipynb`
+
+[![Open in Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/The-Pattern-Hunter/principles-of-genetics-interactive/HEAD?labpath=notebooks/linkage_mapping_interactive.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/linkage_mapping_interactive.ipynb)
+
+**Learning Objectives:**
+- Calculate recombination frequencies and map distances
+- Perform two-point cross analysis
+- Determine gene order using three-point crosses
+- Visualize crossover events and chromosomal arrangements
+
+**Key Features:**
+- Interactive two-point cross calculator
+- Three-point cross gene order determination
+- Chromosome map visualization
+- Double crossover detection and correction
+
+**Perfect for:** Classical genetics courses covering genetic mapping
+
+---
+
+## 🚀 Quick Start
+
+### Option 1: Launch in Browser (Easiest!) 🌐
+
+**No installation needed!** Click any of the launch badges above to run notebooks directly in your browser:
+
+#### **Binder** (Recommended)
+- Click the **"launch binder"** badge for any notebook
+- Wait 1-2 minutes for the environment to build
+- All dependencies are pre-installed
+- Your changes won't be saved (download notebook to save work)
+
+#### **Google Colab**
+- Click the **"Open in Colab"** badge
+- Requires Google account
+- Changes are automatically saved to your Google Drive
+- Slightly different interface than Jupyter
+
+---
+
+### Option 2: Run Locally 💻
+
+#### **Prerequisites:**
+- Python 3.7 or higher
+- pip package manager
+
+#### **Installation Steps:**
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/The-Pattern-Hunter/principles-of-genetics-interactive.git
+   cd principles-of-genetics-interactive/notebooks
+   ```
+
+2. **Create virtual environment (recommended):**
+   ```bash
+   python -m venv genetics_env
+   source genetics_env/bin/activate  # On Windows: genetics_env\Scripts\activate
+   ```
+
+3. **Install dependencies:**
+   ```bash
+   pip install jupyter ipywidgets matplotlib numpy pandas seaborn plotly
+   ```
+
+4. **Enable Jupyter widgets:**
+   ```bash
+   jupyter nbextension enable --py widgetsnbextension
+   ```
+
+5. **Launch Jupyter:**
+   ```bash
+   jupyter notebook
+   ```
+
+6. **Open any notebook** from the file browser
+
+---
+
+### Option 3: Use Anaconda 🐍
+
+If you have Anaconda installed:
+
+```bash
+# Create environment
+conda create -n genetics_interactive python=3.9
+conda activate genetics_interactive
+
+# Install packages
+conda install jupyter ipywidgets matplotlib numpy pandas seaborn
+pip install plotly
+
+# Launch
+jupyter notebook
+```
+
+---
+
+## 📦 Dependencies
+
+All notebooks use the following Python packages:
+- `jupyter` - Interactive notebook environment
+- `ipywidgets` - Interactive controls and sliders
+- `matplotlib` - Plotting and visualization
+- `numpy` - Numerical computations
+- `pandas` - Data manipulation
+- `seaborn` - Statistical visualization
+- `plotly` - Interactive plots (used in some notebooks)
+
+**Note:** Each notebook installs its own dependencies automatically when run on Binder or Colab!
+
+---
+
+## 🎓 Who Is This For?
+
+### **Students:**
+- Undergraduate biology majors studying genetics
+- Graduate students in genetics, genomics, or bioinformatics
+- Medical students learning population genetics
+- Anyone struggling with the conceptual jump from Mendelian to population genetics
+
+### **Educators:**
+- University instructors teaching genetics courses
+- Teaching assistants preparing lab sessions
+- Curriculum developers creating interactive content
+- Anyone looking for engaging teaching demonstrations
+
+### **Researchers:**
+- Those needing a refresher on fundamental concepts
+- Scientists transitioning between research areas
+- Computational biologists learning genetics
+
+---
+
+## 🎯 Learning Path
+
+We recommend working through the notebooks in this order:
+
+1. **Start here:** `family_to_population_bridge.ipynb`
+   - Builds intuition for how individual inheritance creates population patterns
+   - Essential foundation for understanding population genetics
+
+2. **Then:** `linkage_mapping_interactive.ipynb`
+   - Applies recombination concepts to gene mapping
+   - Classical genetics meets molecular biology
+
+3. **Finally:** `linkage_vs_LD_tutorial.ipynb`
+   - Advanced concepts connecting to modern genomics
+   - Bridges to GWAS and evolutionary genetics
+
+**Total time:** 2-3 hours to work through all notebooks
+
+---
+
+## 🧑‍🏫 For Instructors
+
+### **Classroom Use:**
+
+These notebooks are designed for:
+- **Live demonstrations** during lectures
+- **Lab sessions** with hands-on exploration
+- **Homework assignments** with guided questions
+- **Flipped classroom** pre-lecture activities
+
+### **Customization:**
+
+All notebooks are provided with **MIT License** - feel free to:
+- Modify content for your course
+- Add your own examples
+- Create derivative works
+- Use in commercial educational settings
+
+### **Suggested Discussion Questions:**
+
+Each notebook includes built-in pedagogical questions, but consider adding:
+- Population-specific examples relevant to your students
+- Current research applications
+- Connections to medical genetics
+- Historical context and development of ideas
+
+---
+
+## 🌍 Regional Context
+
+These notebooks were developed with a focus on making genetics education accessible using **regional examples from Western Odisha, India**, but the concepts and simulations are universally applicable. The materials are designed to work equally well in any educational context worldwide.
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Here's how you can help:
+
+### **Report Issues:**
+- Found a bug? [Open an issue](https://github.com/The-Pattern-Hunter/principles-of-genetics-interactive/issues)
+- Have suggestions? We'd love to hear them!
+
+### **Contribute Content:**
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature/new-notebook`)
+3. Make your changes
+4. Test thoroughly
+5. Submit a pull request
+
+### **Types of Contributions We're Looking For:**
+- Additional notebooks on related topics
+- Translations to other languages
+- Bug fixes and improvements
+- Additional interactive visualizations
+- Real-world dataset examples
+
+---
+
+## 📖 Educational Philosophy
+
+These notebooks are built on several key principles:
+
+1. **Show, Don't Tell:** Visualizations over equations
+2. **Interactive Discovery:** Let students explore parameter space
+3. **Bridge Building:** Connect familiar concepts to new ones
+4. **Scale Awareness:** Explicitly show how mechanisms work at different scales
+5. **Real Examples:** Use actual genetic scenarios and data
+
+---
+
+## 🔧 Troubleshooting
+
+### **Binder Issues:**
+- **Taking too long to load?** This is normal for first launch (2-3 minutes)
+- **Failed to build?** Try refreshing or use the Colab option
+- **Lost your work?** Remember to download notebooks before closing
+
+### **Colab Issues:**
+- **Widgets not displaying?** Run the first cell that installs packages
+- **Import errors?** Make sure all installation cells complete
+- **Slow performance?** Colab free tier has limitations; consider local installation
+
+### **Local Installation Issues:**
+- **Widgets not interactive?** Run: `jupyter nbextension enable --py widgetsnbextension`
+- **Import errors?** Ensure all packages are installed: `pip install -r requirements.txt`
+- **Plots not showing?** Try: `%matplotlib inline` in a cell
+
+---
+
+## 📝 Citation
+
+If you use these notebooks in your research or teaching, please cite:
+
+```bibtex
+@misc{principles_genetics_interactive,
+  author = {Pattern Hunter},
+  title = {Principles of Genetics: Interactive Notebooks},
+  year = {2024},
+  publisher = {GitHub},
+  url = {https://github.com/The-Pattern-Hunter/principles-of-genetics-interactive}
+}
+```
+
+---
+
+## 📄 License
+
+This project is licensed under the **MIT License** - see the [LICENSE](LICENSE) file for details.
+
+**What this means:**
+- ✅ Use for education and research
+- ✅ Modify and adapt
+- ✅ Commercial use allowed
+- ✅ Distribution allowed
+- ⚠️ Attribution required
+- ⚠️ No warranty provided
+
+---
+
+## 🙏 Acknowledgments
+
+- Developed as part of genetics education initiatives at Kuchinda College, Odisha
+- Inspired by students who asked, "Why does this feel like different subjects?"
+- Built with open-source tools from the scientific Python community
+- Special thanks to the Jupyter, matplotlib, and ipywidgets teams
+
+---
+
+## 📬 Contact
+
+- **Repository:** [github.com/The-Pattern-Hunter/principles-of-genetics-interactive](https://github.com/The-Pattern-Hunter/principles-of-genetics-interactive)
+- **Issues:** [Report bugs or request features](https://github.com/The-Pattern-Hunter/principles-of-genetics-interactive/issues)
+- **Discussions:** [Ask questions or share ideas](https://github.com/The-Pattern-Hunter/principles-of-genetics-interactive/discussions)
+
+---
+
+## 🌟 Star This Repository!
+
+If you find these notebooks useful, please **⭐ star this repository** to help others discover it!
+
+---
+
+## 📊 Repository Statistics
+
+![GitHub stars](https://img.shields.io/github/stars/The-Pattern-Hunter/principles-of-genetics-interactive?style=social)
+![GitHub forks](https://img.shields.io/github/forks/The-Pattern-Hunter/principles-of-genetics-interactive?style=social)
+![GitHub watchers](https://img.shields.io/github/watchers/The-Pattern-Hunter/principles-of-genetics-interactive?style=social)
+
+---
+
+**Happy Learning! 🧬🔬📊**
+
+*Making genetics education accessible, interactive, and intuitive - one notebook at a time.*
