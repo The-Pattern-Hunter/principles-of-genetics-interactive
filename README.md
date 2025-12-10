@@ -3,7 +3,7 @@
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/The-Pattern-Hunter/principles-of-genetics-interactive/HEAD)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-[![DOI](https://img.shields.io/badge/DOI-pending-blue.svg)]()
+[![DOI](https://img.shields.io/badge/DOI-Zenodo DOI 10.5281/zenodo.17887470-blue.svg)]()
 
 > **Click the Binder badge above to launch all materials in an interactive environment - no installation required!**
 
