@@ -19,7 +19,7 @@ Click the **Binder** badge at the top - launches in 1-2 minutes with all materia
 ### Option 2: Launch Individual Notebooks in Google Colab
 
 #### 📓 Core Notebook: Poisson Distribution and Basic Mapping
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/genetic_mapping_poisson.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/notebooks/genetic_mapping_poisson.ipynb)
 
 **Topics Covered:**
 - Poisson distribution as the "shape of uncertainty"
@@ -34,7 +34,7 @@ Click the **Binder** badge at the top - launches in 1-2 minutes with all materia
 ---
 
 #### 📓 Advanced Notebook: Interference and Coefficient of Coincidence
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/interference_and_coc.ipynb)
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/notebooks/interference_and_coc.ipynb)
 
 **Topics Covered:**
 - What is interference and why it occurs
