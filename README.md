@@ -438,11 +438,9 @@ A: Yes, CC BY 4.0 allows commercial use with attribution.
 - 10 high-resolution visualizations
 - Comprehensive guides
 - Academic publications drafted
+- Zenodo DOI 10.5281/zenodo.17887470
 
 ### In Progress 🔄
-- Zenodo archiving (DOI)
-- Video tutorials
-- Translation to Odia and Hindi
 - Additional practice problem sets
 
 ### Planned 📋
