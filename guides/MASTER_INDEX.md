@@ -2,7 +2,7 @@
 
 ## From Poisson Distribution to Interference - A Comprehensive Educational Resource
 
-**Created for**: Ms Susama Kar and Dr. Alok Patel, Kuchinda College
+**Created by**: Ms Susama Kar and Dr. Alok Patel, Kuchinda College
 **Purpose**: Teaching genetic mapping to BSc students and Pattern Hunters book series
 **Date**: December 2025
 
@@ -473,7 +473,7 @@ If you use these materials in publications or presentations:
 **Suggested Citation**:
 > Genetic Mapping Educational Package: From Poisson Distribution to Interference. 
 > Developed for Pattern Hunters Educational Series. 
-> Dr. Alok Chaudhari, Department of Zoology, Kuchinda College, 
+> Ms Susama Kar and Dr. Alok Chaudhari, Department of Zoology, Kuchinda College, 
 > Sambalpur University. December 2025.
 
 **For Academic Use**: Free to use with attribution
@@ -488,9 +488,8 @@ This is a living educational resource. Planned updates:
 
 **Near-term**:
 - Additional worked examples
-- Video tutorials
 - Interactive web version
-- Translation to Odia
+  
 
 **Long-term**:
 - Four-point cross analysis
@@ -509,7 +508,7 @@ This is a living educational resource. Planned updates:
 ## 🎓 Acknowledgments
 
 **Conceptual Framework**: Pattern Hunters educational philosophy
-**Target Audience**: BSc Zoology students, Kuchinda College
+**Target Audience**: BSc  students
 **Regional Focus**: Western Odisha biodiversity
 **Research Context**: Labeo rohita and earthworm genomics
 **Educational Goal**: Excellence in rural science education
