@@ -2,9 +2,9 @@
 ## From Poisson Distribution to Interference - A Comprehensive Educational Resource
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/The-Pattern-Hunter/principles-of-genetics-interactive/HEAD)
-[![DOI](https://img.shields.io/badge/DOI-10.5281%2Fzenodo.17887470-blue)](https://doi.org/10.5281/zenodo.17887470)
-[![License](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
-```
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17887470.svg)](https://doi.org/10.5281/zenodo.17887470)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+
 > **Click the Binder badge above to launch all materials in an interactive environment - no installation required!**
 
 A comprehensive, open educational resource package for teaching genetic mapping, developed at **Kuchinda College, Sambalpur University, Odisha, India**. Materials range from 9th-grade level explanations to research-level applications, featuring examples from Western Odisha biodiversity.
