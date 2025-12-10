@@ -2,7 +2,7 @@
 
 ## From Poisson Distribution to Interference - A Comprehensive Educational Resource
 
-**Created for**: Dr. Alok Chaudhari, Kuchinda College
+**Created for**: Ms Susama Kar and Dr. Alok Patel, Kuchinda College
 **Purpose**: Teaching genetic mapping to BSc students and Pattern Hunters book series
 **Date**: December 2025
 
