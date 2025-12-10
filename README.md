@@ -337,7 +337,7 @@ Email: susama.kar@kuchindacollege.ac.in
 Head, Department of Zoology, Kuchinda College  
 Research: Population genetics, molecular markers, environmental genomics  
 Pattern Hunters Series Developer  
-Email: alok.patel@kuchindacollege.ac.in
+Email: aloksu@gmail.com
 
 ---
 
@@ -376,7 +376,7 @@ If you use these materials, please let us know! We're tracking:
 - Adaptations and improvements
 - Translation efforts
 
-Email: alok.patel@kuchindacollege.ac.in
+Email: aloksu@gmail.com
 
 ---
 
@@ -498,7 +498,7 @@ We value your feedback! Contact us:
 
 *Developed with ❤️ at Kuchinda College, Odisha, India*  
 *Part of the Pattern Hunters Educational Series*  
-*Making world-class genetics education accessible to all*
+*Making world-class mathematical biology education accessible to all*
 
 ---
 
