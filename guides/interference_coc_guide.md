@@ -431,6 +431,6 @@ This demonstrates:
 ---
 
 **Created for Pattern Hunters Educational Series**
-Dr. Alok Chaudhari, Department of Zoology, Kuchinda College
+Ms. Susama Kar and Dr. Alok Patel, Department of Zoology, Kuchinda College
 
 *Extending genetic mapping from Poisson idealization to biological reality*
