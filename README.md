@@ -458,7 +458,7 @@ A: Yes, CC BY 4.0 allows commercial use with attribution.
 
 We value your feedback! Contact us:
 
-**General Questions**: alok.patel@kuchindacollege.ac.in  
+**General Questions**: aloksu@gmail.com  
 **Teaching Implementation**: susama.kar@kuchindacollege.ac.in  
 **Technical Issues**: [Open an issue](https://github.com/The-Pattern-Hunter/principles-of-genetics-interactive/issues)  
 **Collaboration**: Email either author
