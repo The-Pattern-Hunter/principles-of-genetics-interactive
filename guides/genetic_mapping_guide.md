@@ -236,4 +236,4 @@ Determine gene order and distances.
 ---
 
 **Created for Pattern Hunters Educational Series**
-Ms Susama Kar and Dr. Alok Chaudhari, Department of Zoology, Kuchinda College
+Ms Susama Kar and Dr. Alok Patel, Department of Zoology, Kuchinda College
