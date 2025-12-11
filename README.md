@@ -23,6 +23,7 @@ Click the **Binder** badge at the top - launches in 1-2 minutes with all materia
 | **1. Poisson & RF Limit** | Distribution patterns, crossovers, 50% limit | Foundational | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/genetic_mapping_poisson.ipynb) |
 | **2. Three-Point & Interference** | Gene ordering, COC, mapping functions | Advanced | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/interference_and_coc.ipynb) |
 | **3. Linkage vs LD** ✨ NEW | LD concepts, decay, GWAS applications | Advanced+ | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/linkage_vs_linkage_disequilibrium.ipynb) |
+| **4. Mendelian → Population** ✨ | Statistical bridge, HW equilibrium | Foundational | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/mendelian_to_population_genetics.ipynb) |
 
 ---
 
@@ -99,7 +100,31 @@ Clarifies one of the most confusing concepts in genetics! Students often mix up 
 **🎯 Recommended:** Complete Modules 1 & 2 before exploring LD concepts.
 
 ---
+### Module 4: Mendelian to Population Genetics Bridge ✨ NEW!
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/mendelian_to_population_genetics.ipynb)
 
+**Topics Covered:**
+- Transition from individual to population thinking
+- How ratios become frequencies
+- Hardy-Weinberg equilibrium from first principles
+- Population Punnett squares (visual connection!)
+- Random mating simulations
+- Chi-square goodness of fit testing
+- Understanding sampling variation
+
+**Interactive Features:**
+- 🎚️ Watch n=1 cross transform into n=1000 population
+- 🎲 Simulate random mating in real-time
+- 📊 Population Punnett square visualization
+- 🧮 Automatic HW predictions and chi-square tests
+
+**Why This Matters:**  
+Bridges the conceptual gap that confuses most genetics students! Shows that population genetics is just scaled-up Mendelian genetics with statistical thinking.
+
+**Duration:** 60-90 minutes  
+**Best for:** BSc transitioning to population genetics, MSc foundation
+
+**🎯 Recommended:** Complete BEFORE Module 3 (Linkage vs LD) for best understanding.
 ## 📁 Repository Contents
 ```
 principles-of-genetics-interactive/
