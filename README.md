@@ -137,6 +137,7 @@ principles-of-genetics-interactive/
 │   ├── genetic_mapping_poisson.ipynb      (Module 1: Core concepts)
 │   ├── interference_and_coc.ipynb         (Module 2: Advanced topics)
 │   └── linkage_vs_linkage_disequilibrium.ipynb  (Module 3: LD concepts) ✨ NEW!
+│   └── mendelian_to_population_genetics.ipynb  (Module 4: individual to population thinking) ✨ NEW!
 │
 ├── guides/
 │   ├── genetic_mapping_guide.md           (Quick reference)
