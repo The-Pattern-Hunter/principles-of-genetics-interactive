@@ -511,7 +511,7 @@ If you use these materials, please let us know! We're tracking:
 - Adaptations and improvements
 - Translation efforts
 
-Email: alok.patel@kuchindacollege.ac.in
+Email: aloksu@gmail.com
 
 ---
 
