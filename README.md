@@ -1,13 +1,13 @@
 # Principles of Genetics Interactive
-## From Poisson Distribution to Linkage Disequilibrium - A Comprehensive Educational Resource
+## From Mendelian Genetics to Population Genomics - A Comprehensive Educational Resource
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/The-Pattern-Hunter/principles-of-genetics-interactive/HEAD)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17887470.svg)](https://doi.org/10.5281/zenodo.17887470)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17887470.svg)](https://doi.org/10.5281/zenodo.17887470)
 
 > **Click the Binder badge above to launch all materials in an interactive environment - no installation required!**
 
-A comprehensive, open educational resource package for teaching genetic mapping and linkage disequilibrium, developed at **Kuchinda College, Sambalpur University, Odisha, India**. Materials range from 9th-grade level explanations to research-level applications, featuring examples from Western Odisha biodiversity.
+A comprehensive, open educational resource package for teaching genetics from Mendelian principles to population genomics, developed at **Kuchinda College, Sambalpur University, Odisha, India**. Materials range from 9th-grade level explanations to research-level applications, featuring interactive simulations and examples from Indian biodiversity.
 
 ---
 
@@ -18,143 +18,115 @@ Click the **Binder** badge at the top - launches in 1-2 minutes with all materia
 
 ### Option 2: Launch Individual Notebooks in Google Colab
 
-| Notebook | Topics | Level | Launch |
-|----------|--------|-------|--------|
-| **1. Poisson & RF Limit** | Distribution patterns, crossovers, 50% limit | Foundational | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/genetic_mapping_poisson.ipynb) |
-| **2. Three-Point & Interference** | Gene ordering, COC, mapping functions | Advanced | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/interference_and_coc.ipynb) |
-| **3. Linkage vs LD** ✨ NEW | LD concepts, decay, GWAS applications | Advanced+ | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/linkage_vs_linkage_disequilibrium.ipynb) |
-| **4. Mendelian → Population** ✨ | Statistical bridge, HW equilibrium | Foundational | [![Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/mendelian_to_population_genetics.ipynb) |
-
----
-
-## 📚 Learning Modules
-
-### Module 1: Poisson Distribution & 50% Recombination Limit
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/genetic_mapping_poisson.ipynb)
+#### 📓 Core Notebook: Poisson Distribution and Basic Mapping
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/genetic_mapping_poisson.ipynb)
 
 **Topics Covered:**
 - Poisson distribution as the "shape of uncertainty"
 - Why recombination frequency never exceeds 50%
 - Two causes of 50% RF (linkage vs independence)
-- Interactive crossover simulator
-- Gene ordering with Labeo rohita examples
+- Two-point and three-point crosses
+- Gene ordering algorithms with step-by-step examples
 - Practice problems with solutions
 
-**Interactive Features:**
-- 🎚️ 5 interactive widgets with sliders
-- 📊 Real-time parameter manipulation
-- 🎲 Crossover simulation with adjustable sample sizes
-- 🐟 Regional species examples
-
-**Duration:** 60-90 minutes  
 **Best for:** BSc Zoology students, undergraduate genetics courses
 
 ---
 
-### Module 2: Three-Point Crosses & Interference
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/interference_and_coc.ipynb)
+#### 📓 Advanced Notebook: Interference and Coefficient of Coincidence
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/interference_and_coc.ipynb)
 
 **Topics Covered:**
 - What is interference and why it occurs
 - Eight gamete classes in three-point crosses
-- Gene ordering algorithms with step-by-step guidance
 - Coefficient of Coincidence (COC) calculations
 - Haldane vs Kosambi mapping functions
 - Distance-dependent interference patterns
+- Applications to fish and earthworm genetics
 
-**Interactive Features:**
-- 🎚️ 3 interactive sections with real-time calculations
-- 🧮 Automatic COC and interference computation
-- 📏 Visual comparison of mapping functions
-- 🪱 Earthworm and fish genetics applications
-
-**Duration:** 60-90 minutes  
 **Best for:** Advanced undergraduates, MSc students, researchers
 
 ---
 
-### Module 3: Linkage vs Linkage Disequilibrium ✨ NEW!
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/linkage_vs_linkage_disequilibrium.ipynb)
+#### 📓 Population Genomics: FST and Population Structure ✨ NEW
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/5a_fst_population_structure.ipynb)
 
 **Topics Covered:**
-- Critical distinction between linkage and linkage disequilibrium
-- LD measures: D, D', and r²
-- LD decay over generations (with simulator)
-- Population genetics scenarios (admixture, selection, drift)
-- GWAS applications and SNP proxies
-- Haplotype block formation
+- Population differentiation and genetic structure
+- FST calculation and interpretation
+- Variance partitioning (HT vs HS)
+- Drift-migration balance (the "one migrant" rule)
+- Real examples: Indian human populations, Labeo rohita, cattle breeds
+- Conservation genetics applications
+- FST outliers for selection detection
 
-**Interactive Features:**
-- 🎚️ 3 major interactive sections with multiple sliders
-- ⏰ LD decay simulator with customizable parameters
-- 🧬 Create your own LD scenarios
-- 📊 Real-time haplotype frequency calculations
-- 🌍 Population genetics scenario explorer
-
-**Why This Matters:**  
-Clarifies one of the most confusing concepts in genetics! Students often mix up linkage (physical proximity) with LD (statistical association). This module makes the distinction crystal clear through hands-on exploration.
-
-**Duration:** 60-90 minutes  
-**Best for:** Advanced undergraduates, MSc students, population genetics, GWAS researchers
-
-**🎯 Recommended:** Complete Modules 1 & 2 before exploring LD concepts.
+**Best for:** MSc students, population genetics courses, conservation biology
 
 ---
-### Module 4: Mendelian to Population Genetics Bridge ✨ NEW!
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/mendelian_to_population_genetics.ipynb)
+
+#### 📓 Selection Signatures - Detecting Adaptive Evolution ✨ NEW
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/5b_selection_signatures.ipynb)
 
 **Topics Covered:**
-- Transition from individual to population thinking
-- How ratios become frequencies
-- Hardy-Weinberg equilibrium from first principles
-- Population Punnett squares (visual connection!)
-- Random mating simulations
-- Chi-square goodness of fit testing
-- Understanding sampling variation
+- Kimura's neutral theory as null hypothesis
+- Site frequency spectrum (SFS) under different scenarios
+- Tajima's D calculation and interpretation
+- FST outliers, iHS, dN/dS methods
+- Real examples: Lactase persistence, malaria resistance in India
+- Selection detection in aquaculture species
 
-**Interactive Features:**
-- 🎚️ Watch n=1 cross transform into n=1000 population
-- 🎲 Simulate random mating in real-time
-- 📊 Population Punnett square visualization
-- 🧮 Automatic HW predictions and chi-square tests
+**Best for:** MSc students, evolutionary biology, molecular evolution
 
-**Why This Matters:**  
-Bridges the conceptual gap that confuses most genetics students! Shows that population genetics is just scaled-up Mendelian genetics with statistical thinking.
+---
 
-**Duration:** 60-90 minutes  
-**Best for:** BSc transitioning to population genetics, MSc foundation
+#### 📓 Effective Population Size (Ne) - Genetic Bottlenecks ✨ NEW
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/5c_effective_population_size.ipynb)
 
-**🎯 Recommended:** Complete BEFORE Module 3 (Linkage vs LD) for best understanding.
-## 📁 Repository Contents
+**Topics Covered:**
+- Why Ne < census size (N)
+- Factors reducing Ne (sex ratio, reproductive variance)
+- Ne estimation methods (LD, temporal, heterozygosity)
+- The 50/500 rule for conservation
+- Real applications to Labeo rohita management
+- Bottleneck detection and conservation decisions
+
+**Best for:** Conservation biology, wildlife management, aquaculture
+
+---
+
+## 📚 Contents
+
 ```
 principles-of-genetics-interactive/
 │
-├── README.md                              (This file)
-├── LICENSE                                (CC BY 4.0)
-├── requirements.txt                       (Python dependencies)
+├── README.md                                     (This file)
+├── LICENSE                                       (CC BY 4.0)
 │
 ├── notebooks/
-│   ├── genetic_mapping_poisson.ipynb      (Module 1: Core concepts)
-│   ├── interference_and_coc.ipynb         (Module 2: Advanced topics)
-│   └── linkage_vs_linkage_disequilibrium.ipynb  (Module 3: LD concepts) ✨ NEW!
-│   └── mendelian_to_population_genetics.ipynb  (Module 4: individual to population thinking) ✨ NEW!
+│   ├── genetic_mapping_poisson.ipynb             (Module 1: Core concepts)
+│   ├── interference_and_coc.ipynb                (Module 2: Advanced mapping)
+│   ├── linkage_vs_ld.ipynb                       (Module 3: LD concepts)
+│   ├── mendelian_to_population.ipynb             (Module 4: Conceptual bridge)
+│   ├── 5a_fst_population_structure.ipynb         (Module 5A: FST) ✨ NEW
+│   ├── 5b_selection_signatures.ipynb             (Module 5B: Selection) ✨ NEW
+│   └── 5c_effective_population_size.ipynb        (Module 5C: Ne) ✨ NEW
 │
 ├── guides/
-│   ├── genetic_mapping_guide.md           (Quick reference)
-│   ├── interference_coc_guide.md          (Advanced reference)
-│   └── MASTER_INDEX.md                    (Complete package overview)
+│   ├── genetic_mapping_guide.md                  (Quick reference)
+│   ├── interference_coc_guide.md                 (Advanced reference)
+│   └── MASTER_INDEX.md                           (Complete package overview)
 │
 ├── visualizations/
-│   ├── poisson_crossovers.png             (Distribution visualizations)
-│   ├── 50percent_limit.png                (Asymptotic approach)
-│   ├── two_point_cross_comparison.png     (Ambiguity demonstration)
-│   ├── gene_map_labeo.png                 (Labeo rohita example)
-│   ├── gene_map_earthworm.png             (Earthworm example)
-│   ├── eight_gamete_classes.png           (Three-point cross guide)
-│   ├── interference_comparison.png        (Effects of interference)
-│   ├── coc_vs_distance.png               (COC relationships)
-│   ├── mapping_functions_comparison.png   (Haldane vs Kosambi)
-│   └── earthworm_three_point_data.png    (Real data example)
+│   ├── poisson_crossovers.png                    (Distribution visualizations)
+│   ├── 50percent_limit.png                       (Asymptotic approach)
+│   ├── two_point_cross_comparison.png            (Ambiguity demonstration)
+│   ├── gene_map_labeo.png                        (Labeo rohita example)
+│   ├── gene_map_earthworm.png                    (Earthworm example)
+│   ├── eight_gamete_classes.png                  (Three-point cross guide)
+│   ├── interference_comparison.png               (Effects of interference)
+│   ├── coc_vs_distance.png                       (COC relationships)
+│   ├── mapping_functions_comparison.png          (Haldane vs Kosambi)
+│   └── earthworm_three_point_data.png           (Real data example)
 │
 └── articles/
     ├── pedagogy_article_college_magazine.md
@@ -167,9 +139,8 @@ principles-of-genetics-interactive/
 
 ### For Students:
 - **9th Grade+**: Start with "bag switching" analogy and visual explanations
-- **BSc Zoology**: Complete Modules 1-2 (required), Module 3 (optional/advanced)
-- **MSc/Research**: All three modules for comprehensive understanding
-- **Population Genetics**: Focus on Module 3 for LD concepts
+- **BSc Zoology**: Complete both notebooks for comprehensive understanding
+- **MSc/Research**: Focus on advanced notebook and real data applications
 
 ### For Teachers:
 - Ready-to-use materials for genetics courses
@@ -180,7 +151,6 @@ principles-of-genetics-interactive/
 ### For Researchers:
 - Refresh genetic mapping concepts
 - Learn interference calculations
-- Understand LD for GWAS interpretation
 - Apply to QTL mapping projects
 - Use as reference for mapping function choice
 
@@ -191,33 +161,26 @@ principles-of-genetics-interactive/
 ### 1. **Distribution-First Pedagogy**
 Rather than memorizing formulas, students understand the **Poisson distribution** that governs crossover events, discovering why RF ≤ 50% emerges naturally from the mathematics.
 
-### 2. **Fully Interactive with Real-Time Manipulation**
-All three notebooks feature interactive sliders and widgets:
-- Change parameters instantly
-- Watch visualizations update in real-time
-- Explore "what if" scenarios
-- Learn through direct manipulation, not passive reading
-
-### 3. **Regional Biodiversity Examples**
+### 2. **Regional Biodiversity Examples**
 All worked examples use species from Western Odisha:
 - **Labeo rohita** (Indian major carp) - microsatellite mapping
 - **Earthworms** (Metaphire) - environmental genomics from mining regions
 - Connects genetic principles to local research contexts
 
-### 4. **Clarifies Difficult Concepts**
-Module 3 specifically addresses the **linkage vs LD confusion** that trips up students worldwide:
-- Side-by-side comparisons
-- Interactive demonstrations
-- Population genetics scenarios
-- Shows LD can exist between unlinked genes!
-
-### 5. **Multi-Level Learning**
+### 3. **Multi-Level Learning**
 Same concepts explained at multiple levels:
 - Simple analogies for beginners
 - Mathematical rigor for advanced students
 - Research applications for practitioners
 
-### 6. **Open Access, Maximum Impact**
+### 4. **Interactive Exploration**
+Jupyter notebooks allow students to:
+- Modify parameters and see results change
+- Run simulations with different scenarios
+- Generate their own practice problems
+- Learn by doing, not just reading
+
+### 5. **Open Access, Maximum Impact**
 All materials are free, forever:
 - No textbook costs
 - No software licenses
@@ -235,8 +198,10 @@ By completing these materials, students will be able to:
 ✓ Describe the role of Poisson distribution in genetic mapping  
 ✓ Define interference and coefficient of coincidence  
 ✓ Distinguish between Haldane and Kosambi mapping functions  
-✓ **Differentiate linkage from linkage disequilibrium** ✨  
-✓ **Explain how and why LD decays over generations** ✨  
+✓ Explain what FST measures and how it's calculated ✨  
+✓ Understand the drift-migration balance in populations ✨  
+✓ Describe Kimura's neutral theory and its importance ✨  
+✓ Explain why Ne < census size ✨  
 
 ### Skills (Apply & Analyze)
 ✓ Calculate recombination frequencies from experimental data  
@@ -244,17 +209,19 @@ By completing these materials, students will be able to:
 ✓ Draw genetic maps with accurate distances  
 ✓ Calculate COC and interference values  
 ✓ Choose appropriate mapping functions for different organisms  
-✓ **Measure LD using D, D', and r²** ✨  
-✓ **Predict LD decay patterns** ✨  
-✓ **Interpret r² values for GWAS** ✨  
+✓ Calculate FST from allele frequency data ✨  
+✓ Interpret FST values for conservation decisions ✨  
+✓ Calculate and interpret Tajima's D ✨  
+✓ Estimate Ne using genetic data ✨  
 
 ### Higher-Order (Evaluate & Create)
 ✓ Design three-point cross experiments  
 ✓ Evaluate quality of genetic maps  
 ✓ Troubleshoot unexpected experimental results  
 ✓ Apply concepts to new organisms and research questions  
-✓ **Distinguish population history from linkage effects** ✨  
-✓ **Design GWAS studies with appropriate LD considerations** ✨  
+✓ Design conservation strategies using population structure data ✨  
+✓ Detect selection signatures using multiple methods ✨  
+✓ Assess population viability using Ne estimates ✨  
 
 ---
 
@@ -264,7 +231,7 @@ By completing these materials, students will be able to:
 1. Click the Binder badge at top of this page
 2. Wait 1-2 minutes for environment to build
 3. Navigate to `notebooks/` folder
-4. Open any notebook and start learning!
+4. Open either notebook and start learning!
 5. Run cells sequentially (Shift+Enter)
 
 ### For Google Colab:
@@ -280,13 +247,13 @@ git clone https://github.com/The-Pattern-Hunter/principles-of-genetics-interacti
 cd principles-of-genetics-interactive
 
 # Install dependencies
-pip install -r requirements.txt
+pip install numpy matplotlib scipy pandas jupyter
 
 # Launch Jupyter
 jupyter notebook
 ```
 
-**Required packages:** numpy, matplotlib, scipy, pandas, seaborn, ipywidgets  
+**Required packages:** numpy, matplotlib, scipy, pandas  
 **Python version:** 3.7+
 
 ---
@@ -299,8 +266,8 @@ These materials embody the **Pattern Hunters** educational philosophy:
 2. **"Shape creates constraints"** → Mathematical properties → biological laws (50% RF limit)
 3. **"Reality modifies theory"** → Interference adjusts pure Poisson expectations
 4. **"Strategic design resolves ambiguity"** → Three-point crosses distinguish linkage from independence
-5. **"Physical vs Statistical"** → Linkage is location, LD is association (Module 3) ✨
-6. **"Local examples illuminate universal principles"** → Western Odisha species follow same genetic laws as any organism
+5. **"Local examples illuminate universal principles"** → Western Odisha species follow same genetic laws as any organism
+6. **"Population structure emerges from process"** → FST reflects balance between drift and migration ✨
 
 This approach moves from **concrete → abstract** and **observation → formalization**, building deep understanding rather than superficial memorization.
 
@@ -313,65 +280,90 @@ This approach moves from **concrete → abstract** and **observation → formali
 - Disease resistance markers
 - Breeding program optimization
 - Population structure analysis
+- FST-based conservation management ✨
+- Gene flow assessment across river basins ✨
 
 ### Earthworm Genomics
 - Heavy metal tolerance mapping (mining regions)
 - Biomonitoring marker development
 - Population adaptation studies
 - Environmental genomics
+- Selection signatures in pollution-adapted populations ✨
 
-### Linkage Disequilibrium Applications ✨
-- GWAS study design and interpretation
-- Haplotype block identification
-- Population admixture detection
-- Selection signature identification
-- Imputation accuracy prediction
-- Fine-mapping of causal variants
+### Human Population Genetics ✨
+- Indian population structure (ANI-ASI components)
+- Ancestry inference and forensics
+- GWAS population structure correction
+- Migration pattern reconstruction
+- Tribal vs non-tribal differentiation
 
 ### General Research
 - Linkage mapping in any organism
 - Marker-assisted selection programs
 - QTL analysis
 - Genome assembly validation
+- Conservation genetics decision-making ✨
+- Local adaptation detection ✨
 
 ---
 
 ## 📖 Recommended Learning Pathways
 
-### Pathway 1: Complete Beginner (8-10 hours)
+### Pathway 1: Complete Beginner (6-8 hours)
 1. Read `guides/genetic_mapping_guide.md`
-2. Work through Module 1 (Poisson)
-3. Try practice problems
-4. Complete Module 2 (Interference)
-5. Optional: Explore Module 3 (LD)
+2. Complete core notebook (genetic_mapping_poisson.ipynb)
+3. Practice problems from guide
+4. Review visualizations to reinforce concepts
 
-### Pathway 2: BSc Genetics Student (10-12 hours)
-1. Quick review of basic guide
-2. Complete Modules 1-2 entirely
-3. Solve all practice problems
-4. Explore Module 3 basics
-5. Focus on interactive features
+### Pathway 2: Advanced Student (8-10 hours)
+1. Core notebook (quick review if familiar)
+2. Advanced notebook (interference_and_coc.ipynb)
+3. Read academic paper draft
+4. Work through earthworm and fish examples
 
-### Pathway 3: Advanced/MSc (6-8 hours after basics)
-1. Quick review of Modules 1-2
-2. Deep dive into Module 2 (Interference)
-3. Complete Module 3 (LD) thoroughly
-4. Compare Haldane vs Kosambi for your organism
-5. Apply to your own data
-
-### Pathway 4: Population Genetics Focus (4-6 hours with genetics background)
-1. Skim Modules 1-2 for review
-2. Focus entirely on Module 3 (LD)
-3. Explore all population scenarios
-4. Apply to GWAS interpretation
-5. Connect to your research questions
-
-### Pathway 5: Teacher Preparation (4-5 hours)
+### Pathway 3: Instructor Preparation (4-6 hours)
 1. Review MASTER_INDEX.md
-2. Complete all three notebooks
-3. Select appropriate sections for your students
-4. Preview all visualizations
-5. Plan assessment strategy
+2. Explore both notebooks interactively
+3. Read pedagogy article
+4. Adapt visualizations for your context
+5. Review Module 5A for population genetics extension ✨
+
+### Pathway 4: Population Genomics Focus (6-8 hours) ✨ NEW
+1. Quick review: Modules 1-2 (mapping concepts)
+2. Module 3: Linkage vs LD (conceptual foundation)
+3. Module 4: Mendelian to Population bridge (transition)
+4. Module 5A: FST and population structure (differentiation)
+5. Module 5B: Selection signatures (detecting adaptation)
+6. Module 5C: Effective population size (conservation)
+7. Apply to conservation or GWAS research questions
+
+### Pathway 5: Research Application (2-3 hours)
+1. Jump to relevant notebook section
+2. Use as reference for your mapping project
+3. Check mapping function recommendations
+4. Apply population structure concepts to your data ✨
+2. Work through core notebook sections 1-3
+3. Try practice problems from guide
+4. Review visualizations
+5. Complete notebook sections 4-6
+
+### Pathway 2: BSc Genetics Student (8-10 hours)
+1. Quick review of basic guide
+2. Complete core notebook entirely
+3. Solve all practice problems
+4. Optional: Start advanced notebook
+
+### Pathway 3: Advanced/Research (4-6 hours after basics)
+1. Skim core notebook for review
+2. Deep dive into interference notebook
+3. Compare Haldane vs Kosambi for your organism
+4. Apply to your own data
+
+### Pathway 4: Teacher Preparation (3-4 hours)
+1. Review MASTER_INDEX.md
+2. Select appropriate sections for your students
+3. Preview all visualizations
+4. Plan assessment strategy
 
 ---
 
@@ -384,14 +376,12 @@ We welcome contributions! Ways to help:
 - Practice problems and solutions
 - Translations to other languages
 - Corrections and improvements
-- Additional LD scenarios
 
 ### Technical Contributions:
 - Bug fixes
 - Code optimization
 - New visualizations
 - Documentation improvements
-- Interactive widget enhancements
 
 **How to contribute:**
 1. Fork the repository
@@ -410,21 +400,20 @@ If you use these materials in teaching, research, or publications:
 ```bibtex
 @misc{kar2025genetics,
   author = {Kar, Susama and Patel, Alok},
-  title = {Principles of Genetics Interactive: From Poisson Distribution to Linkage Disequilibrium},
+  title = {Principles of Genetics Interactive: From Poisson Distribution to Interference},
   year = {2025},
   publisher = {GitHub},
   journal = {GitHub repository},
   howpublished = {\url{https://github.com/The-Pattern-Hunter/principles-of-genetics-interactive}},
-  doi = {10.5281/zenodo.17887470},
   note = {Educational materials for genetic mapping, Kuchinda College, Sambalpur University}
 }
 ```
 
 ### APA:
-> Kar, S., & Patel, A. (2025). *Principles of genetics interactive: From Poisson distribution to linkage disequilibrium* [Educational software]. Zenodo. https://doi.org/10.5281/zenodo.17887470
+> Kar, S., & Patel, A. (2025). *Principles of genetics interactive: From Poisson distribution to interference* [Educational software]. GitHub. https://github.com/The-Pattern-Hunter/principles-of-genetics-interactive
 
-### Plain Text:
-> Kar, S., & Patel, A. (2025). Principles of Genetics Interactive. DOI: 10.5281/zenodo.17887470
+### For Academic Papers:
+After Zenodo archiving, cite with DOI for formal publications.
 
 ---
 
@@ -448,14 +437,13 @@ See [LICENSE](LICENSE) file for full text.
 **Susama Kar**  
 Lecturer in Zoology, Kuchinda College  
 Department of Zoology, Kuchinda College (affiliated to Sambalpur University)  
-Teaching: BSc 5th Semester Genetics  
 Email: susama.kar@kuchindacollege.ac.in
 
 **Dr. Alok Patel**  
 Head, Department of Zoology, Kuchinda College  
 Research: Population genetics, molecular markers, environmental genomics  
 Pattern Hunters Series Developer  
-Email: aloksu@gmail.com
+Email: alok.patel@kuchindacollege.ac.in
 
 ---
 
@@ -472,7 +460,6 @@ These materials are part of the larger **Pattern Hunters** educational series, w
 - Regional examples (Western Odisha biodiversity)
 - Distribution-first pedagogy
 - Multiple difficulty levels
-- Interactive exploration
 - Open access philosophy
 
 **Vision**: Demonstrate that educational excellence emerges from deep subject expertise and commitment to students, not from institutional prestige or urban location.
@@ -488,8 +475,6 @@ These materials are part of the larger **Pattern Hunters** educational series, w
 
 > *"I showed the interactive notebook to my cousin at an IIT. He said their genetics course doesn't have anything like this!"* - BSc 3rd year student
 
-> *"The LD notebook finally made me understand the difference between linkage and LD. I've been confused about this for two years!"* - MSc 1st year student ✨
-
 ### Adoption:
 If you use these materials, please let us know! We're tracking:
 - Institutions using materials
@@ -497,7 +482,7 @@ If you use these materials, please let us know! We're tracking:
 - Adaptations and improvements
 - Translation efforts
 
-Email: aloksu@gmail.com
+Email: alok.patel@kuchindacollege.ac.in
 
 ---
 
@@ -520,7 +505,6 @@ Email: aloksu@gmail.com
 - [National Education Policy 2020](https://www.education.gov.in/nep)
 - [Open Educational Resources (UNESCO)](https://www.unesco.org/en/open-educational-resources)
 - [Sambalpur University](https://www.suniv.ac.in/)
-- [Zenodo DOI Record](https://doi.org/10.5281/zenodo.17887470)
 
 ---
 
@@ -550,11 +534,11 @@ A: Open an issue on GitHub, or email authors directly.
 **Q: Can I use these for commercial training?**  
 A: Yes, CC BY 4.0 allows commercial use with attribution.
 
-**Q: What's the difference between linkage and LD?** ✨  
-A: That's exactly what Module 3 explains! Linkage = physical location, LD = statistical association.
+**Q: Do I need all modules or can I pick and choose?** ✨  
+A: Pick what you need! Modules 1-2 for mapping, Modules 3-5 for population genetics.
 
-**Q: Do the interactive sliders work in both Binder and Colab?** ✨  
-A: Yes! They work in both environments. Colab is usually faster to load.
+**Q: Is Module 5A suitable for undergraduates?** ✨  
+A: Yes! It's designed with three levels (9th grade → BSc → MSc/Research).
 
 ---
 
@@ -563,25 +547,30 @@ A: Yes! They work in both environments. Colab is usually faster to load.
 ### Completed ✅
 - Core genetic mapping notebook (Module 1)
 - Advanced interference notebook (Module 2)
-- Linkage Disequilibrium notebook (Module 3) ✨ NEW!
+- Linkage vs LD notebook (Module 3)
+- Mendelian to Population bridge (Module 4)
+- **Complete Module 5 series - Population Genomics:** ✨ NEW
+  - 5A: FST and population structure
+  - 5B: Selection signatures (neutral theory, Tajima's D)
+  - 5C: Effective population size (Ne estimation)
 - 10 high-resolution visualizations
 - Comprehensive guides
 - Academic publications drafted
-- Zenodo DOI: 10.5281/zenodo.17887470
-- Interactive widgets with real-time manipulation
+- USB offline package
 
 ### In Progress 🔄
+- Video tutorials
+- Translation to Odia and Hindi
 - Additional practice problem sets
-- Video tutorials (English, Odia, Hindi)
+- Quick reference guides for Module 5
 
 ### Planned 📋
 - Interactive assessments with auto-grading
 - Additional organism examples
 - Four-point cross analysis
 - QTL mapping extension module
-- Haplotype block visualization tool
-- Integration with other Pattern Hunters modules
-- Multilingual support
+- Integration with genomic data analysis tools
+- Advanced selection methods (XP-EHH, PBS)
 
 ---
 
@@ -589,7 +578,7 @@ A: Yes! They work in both environments. Colab is usually faster to load.
 
 We value your feedback! Contact us:
 
-**General Questions**: aloksu@gmail.com  
+**General Questions**: alok.patel@kuchindacollege.ac.in  
 **Teaching Implementation**: susama.kar@kuchindacollege.ac.in  
 **Technical Issues**: [Open an issue](https://github.com/The-Pattern-Hunter/principles-of-genetics-interactive/issues)  
 **Collaboration**: Email either author
@@ -601,10 +590,9 @@ We value your feedback! Contact us:
 - BSc Zoology students at Kuchinda College for feedback and enthusiasm
 - Department of Zoology colleagues for support
 - Sambalpur University for academic environment
-- Open-source community for tools (Python, Jupyter, NumPy, Matplotlib, ipywidgets)
+- Open-source community for tools (Python, Jupyter, NumPy, Matplotlib)
 - Western Odisha biodiversity for endless examples
 - National Education Policy 2020 for emphasizing OER and equity
-- GitHub and Zenodo for hosting and archiving
 
 ---
 
@@ -618,7 +606,7 @@ We value your feedback! Contact us:
 - 🎓 Students reached: [To be tracked]
 - 🏛️ Institutions using: [To be tracked]
 - 🌍 Countries: [To be tracked]
-- 📥 Downloads from Zenodo: [Auto-tracked via DOI]
+- 📥 Downloads: [Auto-updated via GitHub]
 
 ---
 
@@ -630,11 +618,10 @@ We value your feedback! Contact us:
 
 *Developed with ❤️ at Kuchinda College, Odisha, India*  
 *Part of the Pattern Hunters Educational Series*  
-*Making world-class mathematical biology education accessible to all*
+*Making world-class genetics education accessible to all*
 
 ---
 
 **Last Updated**: December 2025  
-**Version**: 1.1 ✨  
-**Status**: Active Development & Teaching Use  
-**DOI**: 10.5281/zenodo.17887470
+**Version**: 1.1 (Population Genomics Edition)  
+**Status**: Active Development & Teaching Use
