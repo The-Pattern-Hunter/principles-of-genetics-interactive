@@ -48,6 +48,35 @@ Click the **Binder** badge at the top - launches in 1-2 minutes with all materia
 
 ---
 
+#### 📓 Linkage vs Linkage Disequilibrium - Clearing the Confusion
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/linkage_vs_ld.ipynb)
+
+**Topics Covered:**
+- Clear distinction between linkage and LD
+- Physical connection vs statistical association
+- How LD decays over generations
+- When to use which concept
+- Applications to GWAS and association mapping
+- Foundation for population genomics
+
+**Best for:** BSc to MSc students, anyone transitioning to modern genetics
+
+---
+
+#### 📓 From Mendelian to Population Genetics - The Conceptual Bridge
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/mendelian_to_population.ipynb)
+
+**Topics Covered:**
+- Individual to population thinking
+- Hardy-Weinberg equilibrium
+- Allele and genotype frequency calculations
+- Transition from pedigrees to populations
+- Foundation for Module 5 series
+
+**Best for:** BSc to MSc students, bridging classical and population genetics
+
+---
+
 #### 📓 Population Genomics: FST and Population Structure ✨ NEW
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/5a_fst_population_structure.ipynb)
 
