@@ -1,3 +1,14 @@
+# Principles of Genetics Interactive
+
+## From Mendelian Genetics to Population Genomics - A Comprehensive Educational Resource
+
+[![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/The-Pattern-Hunter/principles-of-genetics-interactive/HEAD)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17887470.svg)](https://doi.org/10.5281/zenodo.17887470)
+
+> **Click the Binder badge above to launch all materials in an interactive environment - no installation required!**
+
+
 # 🔧 CORRECTED COLAB BADGES - Final Version
 
 Replace the entire "Quick Start" section in your README.md with this:
