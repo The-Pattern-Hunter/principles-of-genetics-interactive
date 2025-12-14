@@ -594,20 +594,76 @@ elif module == "Part 2: Probability & Dihybrid":
         # Visualize
         fig, axes = plt.subplots(1, 2, figsize=(14, 6))
         
-        # Tree (simplified for Streamlit)
+        # Tree (enhanced visualization)
         if show_tree:
             ax = axes[0]
-            ax.text(0.5, 0.9, 'Probability Tree Diagram', ha='center', fontsize=14, fontweight='bold',
-                   transform=ax.transAxes)
-            ax.text(0.5, 0.7, f'P(A) = {p_A:.2f}', ha='center', fontsize=12, transform=ax.transAxes)
-            ax.text(0.5, 0.6, f'P(a) = {p_a:.2f}', ha='center', fontsize=12, transform=ax.transAxes)
-            ax.text(0.5, 0.4, f'P(AA) = {p_A:.2f} × {p_A:.2f} = {p_AA:.3f}', 
-                   ha='center', fontsize=11, transform=ax.transAxes)
-            ax.text(0.5, 0.3, f'P(Aa) = 2 × {p_A:.2f} × {p_a:.2f} = {p_Aa:.3f}', 
-                   ha='center', fontsize=11, transform=ax.transAxes)
-            ax.text(0.5, 0.2, f'P(aa) = {p_a:.2f} × {p_a:.2f} = {p_aa:.3f}', 
-                   ha='center', fontsize=11, transform=ax.transAxes)
+            ax.set_xlim(0, 5)
+            ax.set_ylim(0, 8)
             ax.axis('off')
+            
+            # Start point
+            ax.plot(0.5, 4, 'ko', markersize=20)
+            ax.text(0.2, 4.3, 'Start\n(Cross)', fontsize=11, fontweight='bold')
+            
+            # First split (male gamete)
+            ax.plot([0.5, 1.5], [4, 5.5], 'b-', linewidth=4)
+            ax.plot([0.5, 1.5], [4, 2.5], 'r-', linewidth=4)
+            ax.text(0.8, 5.2, f'A\n({p_A:.2f})', fontsize=12, fontweight='bold', color='blue',
+                   bbox=dict(boxstyle='round', facecolor='lightblue', alpha=0.7))
+            ax.text(0.8, 3.2, f'a\n({p_a:.2f})', fontsize=12, fontweight='bold', color='red',
+                   bbox=dict(boxstyle='round', facecolor='lightcoral', alpha=0.7))
+            
+            # Mark male gamete points
+            ax.plot(1.5, 5.5, 'bo', markersize=15)
+            ax.plot(1.5, 2.5, 'ro', markersize=15)
+            ax.text(1.8, 5.5, '♂ Sperm', fontsize=10, style='italic')
+            ax.text(1.8, 2.5, '♂ Sperm', fontsize=10, style='italic')
+            
+            # Second split from A gamete (female gamete)
+            ax.plot([1.5, 3], [5.5, 6.5], 'b-', linewidth=3)
+            ax.plot([1.5, 3], [5.5, 4.5], 'r-', linewidth=3)
+            ax.text(2.5, 6.3, f'A\n({p_A:.2f})', fontsize=10, color='blue',
+                   bbox=dict(boxstyle='round', facecolor='lightblue', alpha=0.5))
+            ax.text(2.5, 5.2, f'a\n({p_a:.2f})', fontsize=10, color='red',
+                   bbox=dict(boxstyle='round', facecolor='lightcoral', alpha=0.5))
+            
+            # Outcomes from A sperm
+            ax.plot(3.2, 6.5, 'go', markersize=14)
+            ax.text(3.5, 6.5, f'AA\nP={p_AA:.3f}', fontsize=11, fontweight='bold', color='darkgreen',
+                   bbox=dict(boxstyle='round', facecolor='lightgreen', alpha=0.8))
+            ax.plot(3.2, 4.5, marker='o', markersize=14, color='orange')
+            ax.text(3.5, 4.5, f'Aa\nP={p_A*p_a:.3f}', fontsize=11, fontweight='bold', color='darkorange',
+                   bbox=dict(boxstyle='round', facecolor='lightyellow', alpha=0.8))
+            
+            # Second split from a gamete (female gamete)
+            ax.plot([1.5, 3], [2.5, 3.5], 'b-', linewidth=3)
+            ax.plot([1.5, 3], [2.5, 1.5], 'r-', linewidth=3)
+            ax.text(2.5, 3.7, f'A\n({p_A:.2f})', fontsize=10, color='blue',
+                   bbox=dict(boxstyle='round', facecolor='lightblue', alpha=0.5))
+            ax.text(2.5, 2.2, f'a\n({p_a:.2f})', fontsize=10, color='red',
+                   bbox=dict(boxstyle='round', facecolor='lightcoral', alpha=0.5))
+            
+            # Outcomes from a sperm
+            ax.plot(3.2, 3.5, marker='o', markersize=14, color='orange')
+            ax.text(3.5, 3.5, f'aA\nP={p_a*p_A:.3f}', fontsize=11, fontweight='bold', color='darkorange',
+                   bbox=dict(boxstyle='round', facecolor='lightyellow', alpha=0.8))
+            ax.plot(3.2, 1.5, 'ro', markersize=14)
+            ax.text(3.5, 1.5, f'aa\nP={p_aa:.3f}', fontsize=11, fontweight='bold', color='darkred',
+                   bbox=dict(boxstyle='round', facecolor='lightcoral', alpha=0.8))
+            
+            # Add female gamete labels
+            ax.text(3.0, 6.8, '♀ Egg', fontsize=9, style='italic', color='blue')
+            ax.text(3.0, 4.2, '♀ Egg', fontsize=9, style='italic', color='red')
+            ax.text(3.0, 3.8, '♀ Egg', fontsize=9, style='italic', color='blue')
+            ax.text(3.0, 1.2, '♀ Egg', fontsize=9, style='italic', color='red')
+            
+            # Title
+            ax.set_title('Probability Tree Diagram\n(Product Rule in Action)', 
+                        fontsize=13, fontweight='bold', pad=10)
+            
+            # Add note
+            ax.text(2.5, 0.5, 'Note: Aa and aA are same genotype (order doesn\'t matter)', 
+                   fontsize=9, style='italic', ha='center')
         else:
             axes[0].text(0.5, 0.5, 'Enable tree to see visualization', 
                         ha='center', va='center', transform=axes[0].transAxes)
@@ -674,6 +730,7 @@ SUM RULE:
         with col1:
             n_dihy = st.slider("Number of Offspring:", 16, 1600, 160, 16)
             show_exp_dihy = st.checkbox("Show expected 9:3:3:1", value=True, key="dihy_exp")
+            show_punnett_4x4 = st.checkbox("Show 4×4 Punnett Square", value=True, key="punnett_4x4")
             
             if st.button("🎲 Run Dihybrid Cross", type="primary"):
                 st.session_state.run_dihy = True
@@ -696,7 +753,91 @@ SUM RULE:
             observed = [counts.get(p, 0) for p in order]
             expected = [n_dihy * r for r in [9/16, 3/16, 3/16, 1/16]]
             
-            # Plot
+            # 4x4 Punnett Square Visualization
+            if show_punnett_4x4:
+                st.markdown("---")
+                st.markdown("### 🎯 4×4 Punnett Square: RrYy × RrYy")
+                
+                fig_punnett, ax_punnett = plt.subplots(figsize=(12, 12))
+                ax_punnett.set_xlim(0, 6)
+                ax_punnett.set_ylim(0, 6)
+                ax_punnett.axis('off')
+                
+                # Gamete types
+                gametes = ['RY', 'Ry', 'rY', 'ry']
+                
+                # Draw grid
+                for i in range(5):
+                    ax_punnett.plot([1, 5], [5-i, 5-i], 'k-', linewidth=2)
+                    ax_punnett.plot([1+i, 1+i], [1, 5], 'k-', linewidth=2)
+                
+                # Headers - color coded
+                header_colors = ['lightblue', 'lightcyan', 'lightgreen', 'lightyellow']
+                for i, (gamete, color) in enumerate(zip(gametes, header_colors)):
+                    # Top headers
+                    ax_punnett.add_patch(Rectangle((1+i, 5), 1, 0.7, 
+                                                   facecolor=color, edgecolor='black', linewidth=2))
+                    ax_punnett.text(1.5+i, 5.35, gamete, ha='center', va='center', 
+                                   fontsize=14, fontweight='bold')
+                    
+                    # Left headers
+                    ax_punnett.add_patch(Rectangle((0.3, 4-i), 0.7, 1, 
+                                                   facecolor=color, edgecolor='black', linewidth=2))
+                    ax_punnett.text(0.65, 4.5-i, gamete, ha='center', va='center', 
+                                   fontsize=14, fontweight='bold')
+                
+                # Fill offspring cells
+                for i, g1 in enumerate(gametes):
+                    for j, g2 in enumerate(gametes):
+                        # Combine gametes to create offspring genotype
+                        # Gene 1 (R/r)
+                        r_alleles = sorted([g1[0], g2[0]], reverse=True)
+                        gene1_geno = ''.join(r_alleles)
+                        
+                        # Gene 2 (Y/y)
+                        y_alleles = sorted([g1[1], g2[1]], reverse=True)
+                        gene2_geno = ''.join(y_alleles)
+                        
+                        offspring_geno = gene1_geno + gene2_geno
+                        
+                        # Determine phenotype and color
+                        if 'R' in gene1_geno and 'Y' in gene2_geno:
+                            color = 'lightgreen'
+                        elif 'R' in gene1_geno and 'Y' not in gene2_geno:
+                            color = 'lightyellow'
+                        elif 'R' not in gene1_geno and 'Y' in gene2_geno:
+                            color = 'lightcoral'
+                        else:
+                            color = 'lightgray'
+                        
+                        row = 4 - i
+                        col = 1 + j
+                        ax_punnett.add_patch(Rectangle((col, row), 1, 1, 
+                                                      facecolor=color, edgecolor='black', 
+                                                      linewidth=2, alpha=0.7))
+                        ax_punnett.text(col + 0.5, row + 0.5, offspring_geno, 
+                                       ha='center', va='center', fontsize=11, fontweight='bold')
+                
+                ax_punnett.set_title('Complete 4×4 Punnett Square\n16 Possible Offspring Genotypes', 
+                                    fontsize=14, fontweight='bold', pad=15)
+                
+                plt.tight_layout()
+                st.pyplot(fig_punnett)
+                
+                # Legend
+                col1, col2, col3, col4 = st.columns(4)
+                with col1:
+                    st.markdown("🟢 **Round Yellow (R_Y_)** - 9/16")
+                with col2:
+                    st.markdown("🟡 **Round Green (R_yy)** - 3/16")
+                with col3:
+                    st.markdown("🔴 **Wrinkled Yellow (rrY_)** - 3/16")
+                with col4:
+                    st.markdown("⚪ **Wrinkled Green (rryy)** - 1/16")
+                
+                st.markdown("---")
+            
+            # Plot bar chart
             fig, ax = plt.subplots(figsize=(12, 6))
             
             labels = ['Round\nYellow', 'Round\nGreen', 'Wrinkled\nYellow', 'Wrinkled\nGreen']
@@ -987,7 +1128,10 @@ Decision: {'REJECT' if reject else 'ACCEPT'} H₀
                 "Select Interaction Type:",
                 ['Complete Dominance (3:1)',
                  'Incomplete Dominance (1:2:1)',
-                 'Epistasis 9:3:4']
+                 'Codominance (1:2:1)',
+                 'Epistasis 9:3:4 (Recessive)',
+                 'Epistasis 12:3:1 (Dominant)',
+                 'Epistasis 9:7 (Complementary)']
             )
             
             n_inter = st.slider("Sample Size:", 100, 1000, 400, 100, key="inter_n")
@@ -1001,30 +1145,115 @@ Decision: {'REJECT' if reject else 'ACCEPT'} H₀
                 phenotypes = ['Dominant', 'Recessive']
                 props = [0.75, 0.25]
                 colors = ['purple', 'white']
-                info = """**Complete Dominance:**
-AA and Aa → dominant
-aa → recessive
-3:1 ratio"""
+                info = """**Complete Dominance (3:1):**
+
+Genotypes → Phenotypes:
+• AA → Dominant
+• Aa → Dominant  
+• aa → Recessive
+
+Example: Pea plant height
+• TT, Tt → Tall
+• tt → Short
+
+Ratio: 3:1"""
             
             elif 'Incomplete' in interaction_type:
                 phenotypes = ['Red', 'Pink', 'White']
                 props = [0.25, 0.50, 0.25]
                 colors = ['red', 'pink', 'white']
-                info = """**Incomplete Dominance:**
-RR = red
-Rr = pink (intermediate)
-rr = white
-1:2:1 ratio"""
+                info = """**Incomplete Dominance (1:2:1):**
+
+Genotypes → Phenotypes:
+• RR → Red (full pigment)
+• Rr → Pink (intermediate)
+• rr → White (no pigment)
+
+Example: Snapdragon flowers
+Heterozygote shows blend!
+
+Ratio: 1:2:1"""
             
-            else:  # Epistasis
+            elif 'Codominance' in interaction_type:
+                phenotypes = ['Type A', 'Type AB', 'Type B']
+                props = [0.25, 0.50, 0.25]
+                colors = ['red', 'purple', 'blue']
+                info = """**Codominance (1:2:1):**
+
+Genotypes → Phenotypes:
+• I^A I^A → Type A
+• I^A I^B → Type AB (BOTH!)
+• I^B I^B → Type B
+
+Example: ABO blood groups
+Both alleles fully expressed!
+
+Ratio: 1:2:1"""
+            
+            elif '9:3:4' in interaction_type:
                 phenotypes = ['Black', 'Brown', 'Yellow']
                 props = [9/16, 3/16, 4/16]
                 colors = ['black', 'brown', 'yellow']
                 info = """**Recessive Epistasis (9:3:4):**
-E_B_ = black (9/16)
-E_bb = brown (3/16)
-ee__ = yellow (4/16)
-Example: Labrador coat color"""
+
+Two genes: E (deposition), B (color)
+
+Genotypes → Phenotypes:
+• E_B_ → Black (9/16)
+• E_bb → Brown (3/16)
+• eeB_ or eebb → Yellow (4/16)
+
+ee masks the B gene!
+
+Example: Labrador coat color
+Yellow dogs can be EEbb or Eebb
+genetically, but ee overrides!
+
+Ratio: 9:3:4"""
+            
+            elif '12:3:1' in interaction_type:
+                phenotypes = ['Colored', 'White', 'Colored Different']
+                props = [12/16, 3/16, 1/16]
+                colors = ['purple', 'white', 'red']
+                info = """**Dominant Epistasis (12:3:1):**
+
+Two genes: A (inhibitor), B (color)
+
+Genotypes → Phenotypes:
+• A_B_ or A_bb → Colored (12/16)
+• aaB_ → White (3/16)
+• aabb → Colored different (1/16)
+
+A_ masks B gene effect!
+
+Example: Squash fruit color
+• A_ → White (inhibits color)
+• aaB_ → Yellow
+• aabb → Green
+
+Ratio: 12:3:1"""
+            
+            else:  # 9:7
+                phenotypes = ['Colored', 'White']
+                props = [9/16, 7/16]
+                colors = ['purple', 'white']
+                info = """**Complementary Genes (9:7):**
+
+Two genes: BOTH needed for color!
+
+Genotypes → Phenotypes:
+• A_B_ → Colored (9/16)
+• A_bb, aaB_, aabb → White (7/16)
+
+BOTH A and B required!
+
+Example: Sweet pea flowers
+• Need both enzymes for pigment
+• Missing either → No color
+
+This is complementation!
+
+Ratio: 9:7"""
             
             # Simulate
             observed = np.random.multinomial(n_inter, props)
