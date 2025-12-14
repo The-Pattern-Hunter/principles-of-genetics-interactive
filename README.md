@@ -6,6 +6,37 @@
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17887470.svg)](https://doi.org/10.5281/zenodo.17887470)
 
+---
+
+## 🚀 Interactive Web App
+
+### Mendelian Genetics Explorer
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://principles-of-genetics-interactive-e6vksngpfzcaqcmzqhmcwo.streamlit.app/)
+
+**Complete interactive Mendelian genetics for BSc 5th Semester Zoology**
+
+🎯 **Features:**
+- Part 1: Monohybrid Cross & 3:1 Ratio Discovery
+- Part 2: Probability Foundations & Dihybrid Cross (9:3:3:1)  
+- Part 3: Chi-Square Test & Gene Interactions (6 types)
+
+✨ **Pattern Hunters Pedagogy:**
+- "Why 3:1 and not 2:1?" explanations
+- Binomial distribution visualization
+- Complete 4×4 Punnett squares
+- Interactive discovery approach
+
+📱 **Works on any device - No installation required!**
+
+---
+```
+
+5. **Scroll down to bottom of page**
+
+6. **Commit message:** 
+```
+   Add Streamlit app launch badge and description
+
 > **Click the Binder badge above to launch all materials in an interactive environment - no installation required!**
 
 
