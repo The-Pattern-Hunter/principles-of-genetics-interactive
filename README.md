@@ -14,7 +14,19 @@
 Replace the entire "Quick Start" section in your README.md with this:
 
 ---
+## 🎓 QUICK LINKS - ONE-CLICK COLAB LAUNCH
 
+**Mendelian Genetics Series (NEW):**
+
+**M1. [Mendelian Part 1: Monohybrid](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/Mendelian_Part1.ipynb)** ← Click to launch!
+
+**M2. [Mendelian Part 2: Probability & Dihybrid](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/Mendelian_Part2.ipynb)** ← Click to launch!
+
+**M3. [Mendelian Part 3: Chi-Square & Interactions](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/Mendelian_Part3.ipynb)** ← Click to launch!
+
+**Genetic Mapping & Population Genetics:**
+
+1. **[Module 1: Poisson & Mapping]...** (rest of existing links)
 ## 🎯 Quick Start
 
 ### Option 1: Launch in Binder (Recommended for Full Experience)
@@ -86,7 +98,55 @@ Click the **Binder** badge at the top - launches in 1-2 minutes with all materia
 **Best for:** BSc to MSc students, bridging classical and population genetics
 
 ---
+---
 
+#### 📓 Mendelian Genetics Part 1: Monohybrid Cross ✨ NEW
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/Mendelian_Part1.ipynb)
+
+**Topics Covered:**
+- Discovery of the 3:1 ratio through simulation
+- Mendel's Law of Segregation
+- Punnett square visualization
+- Binomial distribution in genetics
+- Probability calculations (Product and Sum rules)
+- Odisha rice plant breeding example
+
+**Best for:** BSc Zoology 5th Semester, undergraduate genetics
+
+---
+
+#### 📓 Mendelian Genetics Part 2: Probability & Dihybrid Cross ✨ NEW
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/Mendelian_Part2.ipynb)
+
+**Topics Covered:**
+- Probability tree diagrams
+- Product and sum rules in action
+- Dihybrid cross (9:3:3:1 ratio)
+- Mendel's Law of Independent Assortment
+- Two-gene segregation patterns
+- Rice grain traits example (Odisha varieties)
+
+**Best for:** BSc Zoology 5th Semester, genetics fundamentals
+
+---
+
+#### 📓 Mendelian Genetics Part 3: Chi-Square & Gene Interactions ✨ NEW
+
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/Mendelian_Part3.ipynb)
+
+**Topics Covered:**
+- Chi-square test for genetic ratios
+- Statistical validation of Mendelian ratios
+- Incomplete dominance (1:2:1 ratio)
+- Codominance patterns
+- Epistasis and modified ratios (9:3:4, 9:7, 12:3:1)
+- Gene interaction types with examples
+
+**Best for:** BSc Zoology 5th Semester, statistical genetics
+
+---
 #### 📓 Module 5A: FST and Population Structure ✨ NEW
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/5a_fst_population_structure.ipynb)
@@ -140,15 +200,21 @@ Click the **Binder** badge at the top - launches in 1-2 minutes with all materia
 
 | Module | Notebook File | Topics | Level | Duration |
 |--------|---------------|--------|-------|----------|
+| **MENDELIAN GENETICS** |||||
+| M1 | `Mendelian_Part1.ipynb` | Monohybrid, 3:1 ratio | BSc | 60-90 min |
+| M2 | `Mendelian_Part2.ipynb` | Probability, dihybrid | BSc | 60-90 min |
+| M3 | `Mendelian_Part3.ipynb` | Chi-square, interactions | BSc | 60-90 min |
+| **GENETIC MAPPING** |||||
 | 1 | `genetic_mapping_poisson.ipynb` | Poisson, basic mapping | BSc | 90-120 min |
 | 2 | `interference_and_coc.ipynb` | Interference, COC | BSc-MSc | 90-120 min |
+| **POPULATION GENETICS** |||||
 | 3 | `linkage_vs_linkage_disequilibrium.ipynb` | Linkage vs LD | BSc-MSc | 60-90 min |
 | 4 | `mendelian_to_population_genetics.ipynb` | Population transition | BSc-MSc | 60-90 min |
 | 5A | `5a_fst_population_structure.ipynb` | FST, structure | MSc-Research | 90-120 min |
 | 5B | `5b_selection_signatures.ipynb` | Selection, Tajima's D | MSc-Research | 120-150 min |
 | 5C | `5c_effective_population_size.ipynb` | Ne estimation | BSc-Research | 90-120 min |
 
-**Total Content:** ~12-15 hours of interactive learning
+**Total Content:** ~15-18 hours of interactive learning
 
 ---
 
