@@ -85,7 +85,7 @@ For developers and contributors, here's how our apps map to files:
 | App # | Streamlit File | Module | Purpose |
 |:-----:|----------------|--------|---------|
 | 1 | `app/app.py` | Module 1 | Main genetic mapping app |
-| 2 | `app/mendelian_genetics.py` | Module 1 |  (Mendelian focus) |
+| 2 | `app/mendelian_genetics.py` | Module 1 |  (Mendelian Laws and their Extension) |
 | 3 | `app/module_2_interference_coc_COMPLETE.py` | Module 2 | Interference & COC |
 | 4 | `app/module_3_linkage_vs_ld_COMPLETE.py` | Module 3 | Linkage vs LD |
 | 5 | `app/module_4_mendelian_to_population_COMPLETE.py` | Module 4 | Mendelian → Population |
@@ -387,8 +387,8 @@ principles-of-genetics-interactive/
 │   └── 5c_effective_population_size.ipynb
 │
 ├── 🌐 app/                # Streamlit web apps (8 files!)
-│   ├── app.py                                    # Module 1 (Main)
-│   ├── mendelian_genetics.py                     # Module 1 (Alt)
+│   ├── app.py                                    # Module 1 (Linkage)
+│   ├── mendelian_genetics.py                     # Module 1 (Mendelian Laws and their Extension)
 │   ├── module_2_interference_coc_COMPLETE.py     # Module 2
 │   ├── module_3_linkage_vs_ld_COMPLETE.py        # Module 3
 │   ├── module_4_mendelian_to_population_COMPLETE.py  # Module 4
