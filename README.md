@@ -24,7 +24,7 @@ Traditional genetics teaching starts with formulas. We start with **patterns**:
 
 ### 👥 Authors
 
-**Susama Kar** (Lecturer in Zoology) & **Dr. Alok Patel** (Head, Department of Zoology)  
+**Ms. Susama Kar** (Lecturer in Zoology) & **Dr. Alok Patel** (Head, Department of Zoology)  
 Kuchinda College, Sambalpur University, Odisha, India
 
 ---
@@ -284,7 +284,7 @@ Quick review all → Deep dive: Modules 3, 5B, 5C → Customize code for your or
 
 ## 🌍 Real Indian Examples
 
-All modules use organisms from **Western Odisha**:
+All modules use organisms from **India/Odisha**:
 
 | Organism | Common Name | Modules | Context |
 |----------|-------------|---------|---------|
