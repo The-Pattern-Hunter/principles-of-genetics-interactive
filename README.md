@@ -1,459 +1,403 @@
 # Principles of Genetics Interactive
 
-## From Mendelian Genetics to Population Genomics - A Comprehensive Educational Resource
+**From Mendelian Genetics to Population Genomics**  
+*A comprehensive educational resource built on Pattern Hunters pedagogy*
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/The-Pattern-Hunter/principles-of-genetics-interactive/HEAD)
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17887470.svg)](https://doi.org/10.5281/zenodo.17887470)
 
 ---
-## 🌐 Interactive Web Apps
 
-**NEW!** Access our complete modules as web applications - no installation needed!
+## 🎯 Start Learning Now
 
-### Why Use the Web Apps?
+### **Recommended: Interactive Web Apps** 🚀
 
-- ✅ **Instant Access** - Click and start learning
-- ✅ **Mobile-Friendly** - Works on phones and tablets
-- ✅ **No Setup** - No Python, Jupyter, or Colab needed
-- ✅ **Always Updated** - Latest version automatically
-- ✅ **Shareable** - Send link to classmates
-
----
----
-
-### 🧪 Additional Interactive Web Apps (NEW)
-
-#### 🧬 Mendelian Genetics Interactive Explorer
-
-[![Launch Mendelian Genetics App](https://img.shields.io/badge/🚀_Launch-Mendelian_Genetics_App-ff4b4b?style=for-the-badge&logo=streamlit)](https://principles-of-genetics-interactive-2pkbgi8l6tnfargre7kakp.streamlit.app/)
-
-**Focus:**
-- Monohybrid cross (3:1 ratio discovery)
-- Dihybrid cross (9:3:3:1)
-- Chi-square testing of genetic ratios
-- Interactive Punnett squares
-
-**Level:** BSc Zoology (Semester V)  
-**Mobile:** ✅ Fully responsive  
-**Pedagogy:** Discovery-based learning
+No installation. No setup. Just click and learn.  
+Works on phones, tablets, and computers.
 
 ---
 
-#### 🌍 Population Genetics & Structure Explorer
+### 🧬 **Mendelian Genetics Series**
 
-[![Launch Population Genetics App](https://img.shields.io/badge/🚀_Launch-Population_Genetics_App-2e8b57?style=for-the-badge&logo=streamlit)](https://principles-of-genetics-interactive-maxg2rtgchwugznsmrabo8.streamlit.app/)
+Perfect for BSc Zoology students learning genetic fundamentals.
 
-**Focus:**
-- Hardy–Weinberg equilibrium
-- Allele & genotype frequency dynamics
-- Population differentiation (FST concepts)
-- Drift vs migration intuition
+#### **Part 1: Discovering the 3:1 Ratio**
+[![Launch App](https://img.shields.io/badge/🚀_Launch-Monohybrid_Cross_Explorer-ff4b4b?style=for-the-badge&logo=streamlit)](https://principles-of-genetics-interactive-2pkbgi8l6tnfargre7kakp.streamlit.app/)
 
-**Level:** BSc → MSc  
-**Mobile:** ✅ Fully responsive  
-**Use case:** Concept building before Module 5A
+*Why 3:1 and not 2:1? Discover Mendel's Law of Segregation through interactive simulation.*
 
----
+**Learn:** Punnett squares • Binomial distribution • Probability rules • Regional examples (Odisha rice varieties)
 
-### 🧬 Module 1: Genetic Mapping & Poisson Distribution
-
-[![Launch Module 1](https://img.shields.io/badge/🚀_Launch-Module_1_Web_App-blue?style=for-the-badge&logo=streamlit)](https://principles-of-genetics-interactive-bycwnz8xeavactkczy3tsm.streamlit.app/)
-
-**Interactive Features:**
-- 🎮 Single Poisson distribution explorer
-- 🎮 Four-distribution comparison
-- 🎮 RF vs Distance interactive curve
-- 🎮 Crossover simulator (adjustable parameters)
-- 🎮 Labeo rohita gene mapper
-
-**Duration:** 60-90 minutes  
-**Level:** BSc Zoology  
-**Mobile:** ✅ Fully responsive
-
-**What you'll learn:**
-- Why RF can never exceed 50%
-- Poisson distribution in crossovers
-- Gene mapping from real data
-- Three-point cross analysis
+**Duration:** 60-90 minutes | **Level:** BSc Semester 5
 
 ---
 
-### 🌍 Module 5A: FST and Population Structure
+#### **Part 2: Two Genes, Nine Phenotypes**
+*Coming soon: Dihybrid cross web app*
 
-[![Launch Module 5A](https://img.shields.io/badge/🚀_Launch-Module_5A_Web_App-green?style=for-the-badge&logo=streamlit)](https://principles-of-genetics-interactive-hw5rkq6r9dfyccmh3wgidk.streamlit.app/)
-
-**Interactive Features:**
-- 🎮 Population divergence simulator
-- 🎮 Step-by-step FST calculator
-- 🎮 Drift-migration balance explorer
-- 🌍 Real data: Indian populations, Labeo rohita, cattle
-
-**Duration:** 90-120 minutes  
-**Level:** MSc / Research  
-**Mobile:** ✅ Fully responsive
-
-**What you'll learn:**
-- Calculate and interpret FST
-- Population genetic structure
-- Conservation applications
-- Migration-drift balance
+**Preview:** Use the [Complete Mendelian App](https://principles-of-genetics-interactive-e6vksngpfzcaqcmzqhmcwo.streamlit.app/) or [Colab notebook](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/Mendelian_Part2.ipynb)
 
 ---
 
-### 📱 How to Use on Mobile
+#### **Part 3: When Genes Interact**
+*Coming soon: Gene interactions web app*
 
-1. **Click the badge** above
-2. **Add to Home Screen** for app-like experience:
-   - Android: Menu → "Add to Home Screen"
-   - iPhone: Share → "Add to Home Screen"
-3. **Use like a native app!**
+**Preview:** Use the [Complete Mendelian App](https://principles-of-genetics-interactive-e6vksngpfzcaqcmzqhmcwo.streamlit.app/) or [Colab notebook](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/Mendelian_Part3.ipynb)
 
 ---
 
-### 💻 Alternative: Use Jupyter Notebooks
+### 🗺️ **Genetic Mapping & Linkage**
 
-Prefer traditional notebooks? We also provide:
-- **Google Colab** badges (click badges below each module)
-- **Binder** for full Jupyter environment
-- **Download** for local use
+From classical crossover mapping to modern genomic applications.
 
----
-## 🚀 Interactive Web App
+#### **Module 1: Why Recombination Never Exceeds 50%**
+[![Launch App](https://img.shields.io/badge/🚀_Launch-Genetic_Mapping_Explorer-blue?style=for-the-badge&logo=streamlit)](https://principles-of-genetics-interactive-bycwnz8xeavactkczy3tsm.streamlit.app/)
 
-### Mendelian Genetics Explorer
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://principles-of-genetics-interactive-e6vksngpfzcaqcmzqhmcwo.streamlit.app/)
+*Discover the Poisson distribution hidden in genetic crosses.*
 
-**Complete interactive Mendelian genetics for BSc 5th Semester Zoology**
+**Interactive tools:**
+- Single and multi-Poisson distribution explorer
+- RF vs distance curve simulator
+- Crossover pattern generator
+- Real gene mapping with *Labeo rohita* data
 
-🎯 **Features:**
-- Part 1: Monohybrid Cross & 3:1 Ratio Discovery
-- Part 2: Probability Foundations & Dihybrid Cross (9:3:3:1)  
-- Part 3: Chi-Square Test & Gene Interactions (6 types)
+**Learn:** Two-point crosses • Three-point crosses • Gene ordering algorithms • Interference patterns
 
-✨ **Pattern Hunters Pedagogy:**
-- "Why 3:1 and not 2:1?" explanations
-- Binomial distribution visualization
-- Complete 4×4 Punnett squares
-- Interactive discovery approach
-
-📱 **Works on any device - No installation required!**
+**Duration:** 90-120 minutes | **Level:** BSc to MSc
 
 ---
+
+#### **Module 2: Interference and Advanced Mapping**
+
+*Web app coming soon*
+
+**Preview:** [Launch in Colab](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/interference_and_coc.ipynb)
+
+**Learn:** Coefficient of Coincidence • Haldane vs Kosambi functions • Eight gamete classes
+
+---
+
+### 🌍 **Population Genetics & Structure**
+
+Connect individual genetics to evolutionary processes.
+
+#### **Module 4: From Pedigrees to Populations**
+
+*Web app coming soon*
+
+**Preview:** [Launch in Colab](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/mendelian_to_population_genetics.ipynb)
+
+**Learn:** Hardy-Weinberg equilibrium • Allele frequencies • Population thinking
+
+---
+
+#### **Module 5A: Measuring Population Differentiation**
+[![Launch App](https://img.shields.io/badge/🚀_Launch-FST_Population_Explorer-green?style=for-the-badge&logo=streamlit)](https://principles-of-genetics-interactive-hw5rkq6r9dfyccmh3wgidk.streamlit.app/)
+
+*How genetically different are two populations? Learn to calculate and interpret FST.*
+
+**Interactive tools:**
+- Step-by-step FST calculator
+- Population divergence simulator
+- Drift-migration balance explorer
+- Real datasets: Indian populations, fish, cattle
+
+**Learn:** Variance partitioning • The "one migrant" rule • Conservation applications • FST outliers
+
+**Duration:** 90-120 minutes | **Level:** MSc to Research
+
+---
+
+#### **Module 5B: Detecting Natural Selection**
+
+*Web app coming soon*
+
+**Preview:** [Launch in Colab](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/5b_selection_signatures.ipynb)
+
+**Learn:** Tajima's D • Site frequency spectrum • Selection vs drift • Indian examples (lactase, malaria)
+
+---
+
+#### **Module 5C: Effective Population Size**
+
+*Web app coming soon*
+
+**Preview:** [Launch in Colab](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/5c_effective_population_size.ipynb)
+
+**Learn:** Why Ne < N • The 50/500 rule • Conservation genetics • Bottleneck detection
+
+---
+
+### 🔬 **Additional Explorers**
+
+#### **Mendelian Genetics Complete Suite**
+[![Launch](https://img.shields.io/badge/Launch-Complete_Suite-purple?style=for-the-badge&logo=streamlit)](https://principles-of-genetics-interactive-e6vksngpfzcaqcmzqhmcwo.streamlit.app/)
+
+All three Mendelian parts in one app: monohybrid, dihybrid, chi-square, gene interactions.
+
+---
+
+#### **Population Genetics Foundations**
+[![Launch](https://img.shields.io/badge/Launch-PopGen_Basics-teal?style=for-the-badge&logo=streamlit)](https://principles-of-genetics-interactive-maxg2rtgchwugznsmrabo8.streamlit.app/)
+
+Hardy-Weinberg • Allele frequency dynamics • FST concepts • Drift vs migration intuition.
+
+---
+
+## 📱 Mobile Learning
+
+All web apps work perfectly on smartphones and tablets!
+
+**Pro tip:** Add to your home screen for an app-like experience:
+- **Android:** Menu → "Add to Home Screen"
+- **iPhone:** Share → "Add to Home Screen"
+
+---
+
+## 📚 Complete Module Catalog
+
+| Topic | Web App | Colab | Level | Time |
+|-------|---------|-------|-------|------|
+| **MENDELIAN GENETICS** |
+| Monohybrid cross | [Launch](https://principles-of-genetics-interactive-2pkbgi8l6tnfargre7kakp.streamlit.app/) | [Colab](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/Mendelian_Part1.ipynb) | BSc | 60-90 min |
+| Probability & dihybrid | [Launch](https://principles-of-genetics-interactive-e6vksngpfzcaqcmzqhmcwo.streamlit.app/) | [Colab](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/Mendelian_Part2.ipynb) | BSc | 60-90 min |
+| Chi-square & interactions | [Launch](https://principles-of-genetics-interactive-e6vksngpfzcaqcmzqhmcwo.streamlit.app/) | [Colab](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/Mendelian_Part3.ipynb) | BSc | 60-90 min |
+| **GENETIC MAPPING** |
+| Poisson & basic mapping | [Launch](https://principles-of-genetics-interactive-bycwnz8xeavactkczy3tsm.streamlit.app/) | [Colab](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/genetic_mapping_poisson.ipynb) | BSc-MSc | 90-120 min |
+| Interference & COC | *Soon* | [Colab](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/interference_and_coc.ipynb) | BSc-MSc | 90-120 min |
+| **POPULATION GENETICS** |
+| Linkage vs LD | *Soon* | [Colab](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/linkage_vs_linkage_disequilibrium.ipynb) | BSc-MSc | 60-90 min |
+| Mendelian → Population | *Soon* | [Colab](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/mendelian_to_population_genetics.ipynb) | BSc-MSc | 60-90 min |
+| FST & structure | [Launch](https://principles-of-genetics-interactive-hw5rkq6r9dfyccmh3wgidk.streamlit.app/) | [Colab](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/5a_fst_population_structure.ipynb) | MSc-Research | 90-120 min |
+| Selection signatures | *Soon* | [Colab](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/5b_selection_signatures.ipynb) | MSc-Research | 120-150 min |
+| Effective population size | *Soon* | [Colab](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/5c_effective_population_size.ipynb) | MSc-Research | 90-120 min |
+
+**Total learning time:** 15-18 hours
+
+---
+
+## 🎓 Who This Is For
+
+### **Undergraduate Students (BSc Zoology)**
+Start with Mendelian Genetics series, then explore genetic mapping. Perfect for Semester 5-6 genetics courses aligned with NEP 2020.
+
+### **Postgraduate Students (MSc)**
+Focus on Module 3-5 series for population genetics, selection detection, and conservation applications.
+
+### **Researchers & Faculty**
+Use Module 5 series for understanding population genomic analyses. Real datasets from Indian populations, aquaculture species, and livestock.
+
+### **Self-Learners**
+Progress sequentially from Mendelian basics to advanced population genomics. All materials are self-contained with worked examples.
+
+---
+
+## 🧠 Pattern Hunters Pedagogy
+
+Our approach differs from traditional textbooks:
+
+**1. Start with "Why?"**  
+- Why 3:1 and not 2:1?  
+- Why does RF never exceed 50%?  
+- Why do we need FST when we have allele frequencies?
+
+**2. Use Regional Examples**  
+- Odisha rice varieties for Mendelian genetics  
+- *Labeo rohita* (Indian carp) for linkage mapping  
+- Indian human populations for FST analysis  
+- Western Odisha biodiversity for conservation genetics
+
+**3. Build Intuition First, Formulas Later**  
+- Simulate crosses before calculating probabilities  
+- Visualize distributions before learning equations  
+- Explore patterns before memorizing tests
+
+**4. Connect Scales**  
+- Individual → Family → Population → Species  
+- Pedigree → Hardy-Weinberg → Population structure  
+- Gene → Chromosome → Genome
+
+**5. Make It Interactive**  
+- Adjust parameters and see results instantly  
+- Compare your intuition with simulation outcomes  
+- Discover patterns through exploration
+
+---
+
+## 🚀 Getting Started
+
+### **Quick Start (Easiest)**
+
+1. Click any web app badge above
+2. Start learning immediately
+3. No account needed, works on any device
+
+### **Google Colab (Traditional)**
+
+1. Click a Colab badge above
+2. Wait 5-10 seconds for notebook to load
+3. Click "Run" buttons to execute code cells
+4. Modify code and re-run to explore
+
+### **Binder (Full Environment)**
+
+1. Click the Binder badge at the top
+2. Wait 1-2 minutes for environment to build
+3. Browse all notebooks in Jupyter interface
+4. Full Python environment with all dependencies
+
+### **Local Installation (Advanced)**
+
+```bash
+# Clone repository
+git clone https://github.com/The-Pattern-Hunter/principles-of-genetics-interactive.git
+cd principles-of-genetics-interactive
+
+# Create virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows: venv\Scripts\activate
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Launch Jupyter
+jupyter notebook
 ```
 
-5. **Scroll down to bottom of page**
+---
 
-6. **Commit message:** 
+## 📖 Learning Pathways
+
+### **Path 1: BSc Genetics Fundamentals**
+1. Mendelian Part 1 (Monohybrid)
+2. Mendelian Part 2 (Dihybrid)
+3. Mendelian Part 3 (Chi-square)
+4. Module 1 (Genetic Mapping)
+5. Module 4 (Mendelian to Population)
+
+**Outcome:** Strong foundation in classical genetics and transition to population thinking.
+
+---
+
+### **Path 2: Population Genetics & Conservation**
+1. Module 4 (Mendelian to Population)
+2. Module 5A (FST & Structure)
+3. Module 5C (Effective Population Size)
+4. Module 5B (Selection Signatures)
+
+**Outcome:** Ready for conservation genetics, molecular ecology, and population genomics research.
+
+---
+
+### **Path 3: Genetic Mapping & QTL Analysis**
+1. Module 1 (Poisson & Basic Mapping)
+2. Module 2 (Interference & COC)
+3. Module 3 (Linkage vs LD)
+4. Module 5B (Selection detection)
+
+**Outcome:** Understanding for QTL mapping, GWAS, and genomic selection programs.
+
+---
+
+## 🌟 Key Features
+
+✅ **No Installation Required** - Web apps work instantly  
+✅ **Mobile-Friendly** - Learn on any device  
+✅ **Real Indian Examples** - Regional context for universal concepts  
+✅ **Interactive Simulations** - See patterns emerge in real-time  
+✅ **Step-by-Step Calculations** - Understand every formula  
+✅ **Practice Problems** - Worked solutions with explanations  
+✅ **Open Access** - CC BY 4.0 license, free forever  
+✅ **Research-Grade** - Based on published methods and real data  
+✅ **Continuously Updated** - New modules and features added regularly
+
+---
+
+## 🤝 Contributing
+
+We welcome contributions! Ways to help:
+
+- Report bugs or suggest features (open an issue)
+- Contribute regional examples from your area
+- Translate content to regional languages
+- Create additional practice problems
+- Share how you're using these materials
+
+---
+
+## 📄 Citation
+
+If you use these materials in teaching or research, please cite:
+
 ```
-   Add Streamlit app launch badge and description
-
-> **Click the Binder badge above to launch all materials in an interactive environment - no installation required!**
-
-
-# 🔧 CORRECTED COLAB BADGES - Final Version
-
-Replace the entire "Quick Start" section in your README.md with this:
-
----
-## 🎓 QUICK LINKS - ONE-CLICK COLAB LAUNCH
-
-**Mendelian Genetics Series (NEW):**
-
-**M1. [Mendelian Part 1: Monohybrid](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/Mendelian_Part1.ipynb)** ← Click to launch!
-
-**M2. [Mendelian Part 2: Probability & Dihybrid](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/Mendelian_Part2.ipynb)** ← Click to launch!
-
-**M3. [Mendelian Part 3: Chi-Square & Interactions](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/Mendelian_Part3.ipynb)** ← Click to launch!
-
-**Genetic Mapping & Population Genetics:**
-
-1. **[Module 1: Poisson & Mapping]...** (rest of existing links)
-## 🎯 Quick Start
-
-### Option 1: Launch in Binder (Recommended for Full Experience)
-Click the **Binder** badge at the top - launches in 1-2 minutes with all materials ready to use.
-
-### Option 2: Launch Individual Notebooks in Google Colab
-
----
-
-#### 📓 Module 1: Poisson Distribution and Basic Mapping
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/genetic_mapping_poisson.ipynb)
-
-**Topics Covered:**
-- Poisson distribution as the "shape of uncertainty"
-- Why recombination frequency never exceeds 50%
-- Two causes of 50% RF (linkage vs independence)
-- Two-point and three-point crosses
-- Gene ordering algorithms with step-by-step examples
-- Practice problems with solutions
-
-**Best for:** BSc Zoology students, undergraduate genetics courses
-
----
-
-#### 📓 Module 2: Interference and Coefficient of Coincidence
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/interference_and_coc.ipynb)
-
-**Topics Covered:**
-- What is interference and why it occurs
-- Eight gamete classes in three-point crosses
-- Coefficient of Coincidence (COC) calculations
-- Haldane vs Kosambi mapping functions
-- Distance-dependent interference patterns
-- Applications to fish and earthworm genetics
-
-**Best for:** Advanced undergraduates, MSc students, researchers
-
----
-
-#### 📓 Module 3: Linkage vs Linkage Disequilibrium
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/linkage_vs_linkage_disequilibrium.ipynb)
-
-**Topics Covered:**
-- Clear distinction between linkage and LD
-- Physical connection vs statistical association
-- How LD decays over generations
-- When to use which concept
-- Applications to GWAS and association mapping
-- Foundation for population genomics
-
-**Best for:** BSc to MSc students, anyone transitioning to modern genetics
-
----
-
-#### 📓 Module 4: From Mendelian to Population Genetics
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/mendelian_to_population_genetics.ipynb)
-
-**Topics Covered:**
-- Individual to population thinking
-- Hardy-Weinberg equilibrium
-- Allele and genotype frequency calculations
-- Transition from pedigrees to populations
-- Foundation for Module 5 series
-
-**Best for:** BSc to MSc students, bridging classical and population genetics
-
----
----
-
-#### 📓 Mendelian Genetics Part 1: Monohybrid Cross ✨ NEW
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/Mendelian_Part1.ipynb)
-
-**Topics Covered:**
-- Discovery of the 3:1 ratio through simulation
-- Mendel's Law of Segregation
-- Punnett square visualization
-- Binomial distribution in genetics
-- Probability calculations (Product and Sum rules)
-- Odisha rice plant breeding example
-
-**Best for:** BSc Zoology 5th Semester, undergraduate genetics
-
----
-
-#### 📓 Mendelian Genetics Part 2: Probability & Dihybrid Cross ✨ NEW
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/Mendelian_Part2.ipynb)
-
-**Topics Covered:**
-- Probability tree diagrams
-- Product and sum rules in action
-- Dihybrid cross (9:3:3:1 ratio)
-- Mendel's Law of Independent Assortment
-- Two-gene segregation patterns
-- Rice grain traits example (Odisha varieties)
-
-**Best for:** BSc Zoology 5th Semester, genetics fundamentals
-
----
-
-#### 📓 Mendelian Genetics Part 3: Chi-Square & Gene Interactions ✨ NEW
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/Mendelian_Part3.ipynb)
-
-**Topics Covered:**
-- Chi-square test for genetic ratios
-- Statistical validation of Mendelian ratios
-- Incomplete dominance (1:2:1 ratio)
-- Codominance patterns
-- Epistasis and modified ratios (9:3:4, 9:7, 12:3:1)
-- Gene interaction types with examples
-
-**Best for:** BSc Zoology 5th Semester, statistical genetics
-
----
-#### 📓 Module 5A: FST and Population Structure ✨ NEW
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/5a_fst_population_structure.ipynb)
-
-**Topics Covered:**
-- Population differentiation and genetic structure
-- FST calculation and interpretation
-- Variance partitioning (HT vs HS)
-- Drift-migration balance (the "one migrant" rule)
-- Real examples: Indian human populations, Labeo rohita, cattle breeds
-- Conservation genetics applications
-- FST outliers for selection detection
-
-**Best for:** MSc students, population genetics courses, conservation biology
-
----
-
-#### 📓 Module 5B: Selection Signatures ✨ NEW
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/5b_selection_signatures.ipynb)
-
-**Topics Covered:**
-- Kimura's neutral theory as null hypothesis
-- Site frequency spectrum (SFS) under different scenarios
-- Tajima's D calculation and interpretation
-- FST outliers, iHS, dN/dS methods
-- Real examples: Lactase persistence, malaria resistance in India
-- Selection detection in aquaculture species
-
-**Best for:** MSc students, evolutionary biology, molecular evolution
-
----
-
-#### 📓 Module 5C: Effective Population Size (Ne) ✨ NEW
-
-[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/5c_effective_population_size.ipynb)
-
-**Topics Covered:**
-- Why Ne < census size (N)
-- Factors reducing Ne (sex ratio, reproductive variance)
-- Ne estimation methods (LD, temporal, heterozygosity)
-- The 50/500 rule for conservation
-- Real applications to Labeo rohita management
-- Bottleneck detection and conservation decisions
-
-**Best for:** Conservation biology, wildlife management, aquaculture
-
----
-
-## 📚 ALL NOTEBOOKS AT A GLANCE
-
-| Module | Notebook File | Topics | Level | Duration |
-|--------|---------------|--------|-------|----------|
-| **MENDELIAN GENETICS** |||||
-| M1 | `Mendelian_Part1.ipynb` | Monohybrid, 3:1 ratio | BSc | 60-90 min |
-| M2 | `Mendelian_Part2.ipynb` | Probability, dihybrid | BSc | 60-90 min |
-| M3 | `Mendelian_Part3.ipynb` | Chi-square, interactions | BSc | 60-90 min |
-| **GENETIC MAPPING** |||||
-| 1 | `genetic_mapping_poisson.ipynb` | Poisson, basic mapping | BSc | 90-120 min |
-| 2 | `interference_and_coc.ipynb` | Interference, COC | BSc-MSc | 90-120 min |
-| **POPULATION GENETICS** |||||
-| 3 | `linkage_vs_linkage_disequilibrium.ipynb` | Linkage vs LD | BSc-MSc | 60-90 min |
-| 4 | `mendelian_to_population_genetics.ipynb` | Population transition | BSc-MSc | 60-90 min |
-| 5A | `5a_fst_population_structure.ipynb` | FST, structure | MSc-Research | 90-120 min |
-| 5B | `5b_selection_signatures.ipynb` | Selection, Tajima's D | MSc-Research | 120-150 min |
-| 5C | `5c_effective_population_size.ipynb` | Ne estimation | BSc-Research | 90-120 min |
-
-**Total Content:** ~15-18 hours of interactive learning
-
----
-
-## 🎓 QUICK LINKS - ONE-CLICK COLAB LAUNCH
-
-**All 7 modules in order:**
-
-1. **[Module 1: Poisson & Mapping](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/genetic_mapping_poisson.ipynb)** ← Click to launch!
-
-2. **[Module 2: Interference & COC](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/interference_and_coc.ipynb)** ← Click to launch!
-
-3. **[Module 3: Linkage vs LD](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/linkage_vs_linkage_disequilibrium.ipynb)** ← Click to launch!
-
-4. **[Module 4: Mendelian → Population](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/mendelian_to_population_genetics.ipynb)** ← Click to launch!
-
-5. **[Module 5A: FST & Structure](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/5a_fst_population_structure.ipynb)** ← Click to launch!
-
-6. **[Module 5B: Selection Signatures](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/5b_selection_signatures.ipynb)** ← Click to launch!
-
-7. **[Module 5C: Effective Population Size](https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/5c_effective_population_size.ipynb)** ← Click to launch!
-
----
-
-## ✅ HOW TO UPDATE YOUR README
-
-### **Edit on GitHub Website:**
-
-1. **Go to:** https://github.com/The-Pattern-Hunter/principles-of-genetics-interactive
-
-2. **Click** on `README.md` file
-
-3. **Click** pencil icon ✏️ (top right) to edit
-
-4. **Find** the section starting with `## 🎯 Quick Start`
-
-5. **Select and DELETE** everything from `## 🎯 Quick Start` down to the next `##` section
-
-6. **COPY** everything from this file (from `## 🎯 Quick Start` to the `---` before the next section)
-
-7. **PASTE** into your README
-
-8. **Scroll down**, write commit message: `Fix all Colab badges with correct notebook filenames`
-
-9. **Click** "Commit changes"
-
-**DONE!** ✅
-
----
-
-## 🎯 WHAT CHANGED
-
-### **Old (Broken):**
-```
-❌ blob/main/genetic_mapping_poisson.ipynb
-❌ blob/main/interference_and_coc.ipynb
-❌ blob/main/linkage_vs_ld.ipynb
-❌ blob/main/mendelian_to_population.ipynb
+Alok Kumar Sahoo. (2024). Principles of Genetics Interactive: 
+From Mendelian Genetics to Population Genomics (v1.0). 
+Zenodo. https://doi.org/10.5281/zenodo.17887470
 ```
 
-### **New (Working):**
-```
-✅ blob/main/notebooks/genetic_mapping_poisson.ipynb
-✅ blob/main/notebooks/interference_and_coc.ipynb
-✅ blob/main/notebooks/linkage_vs_linkage_disequilibrium.ipynb
-✅ blob/main/notebooks/mendelian_to_population_genetics.ipynb
-✅ blob/main/notebooks/5a_fst_population_structure.ipynb
-✅ blob/main/notebooks/5b_selection_signatures.ipynb
-✅ blob/main/notebooks/5c_effective_population_size.ipynb
-```
+---
 
-**Key fixes:**
-1. ✅ Added `notebooks/` path
-2. ✅ Used correct filenames (exact match)
-3. ✅ All 7 modules included
+## 📧 Contact
+
+**Alok Kumar Sahoo**  
+Head, Department of Zoology  
+Kuchinda College, Sambalpur University  
+Odisha, India
+
+GitHub: [@The-Pattern-Hunter](https://github.com/The-Pattern-Hunter)
 
 ---
 
-## 🧪 TEST THESE LINKS RIGHT NOW!
+## 📜 License
 
-Click each one to verify they work:
+All materials licensed under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/)
 
-1. https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/genetic_mapping_poisson.ipynb
+You are free to:
+- **Share** - Copy and redistribute
+- **Adapt** - Remix and build upon
+- **Use commercially** - Even for commercial purposes
 
-2. https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/interference_and_coc.ipynb
-
-3. https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/linkage_vs_linkage_disequilibrium.ipynb
-
-4. https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/mendelian_to_population_genetics.ipynb
-
-5. https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/5a_fst_population_structure.ipynb
-
-6. https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/5b_selection_signatures.ipynb
-
-7. https://colab.research.google.com/github/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/notebooks/5c_effective_population_size.ipynb
-
-**All should open in Google Colab!** 🎉
+Under these terms:
+- **Attribution** - Give appropriate credit
+- **No additional restrictions** - Cannot apply legal terms that restrict others
 
 ---
 
-**Copy this entire file content and replace your README's "Quick Start" section!**
+## 🙏 Acknowledgments
+
+- Students of Kuchinda College for feedback and inspiration
+- Faculty colleagues for collaborative development
+- Open source community for tools (Jupyter, Streamlit, Python)
+- Pattern Hunters community for pedagogical insights
+
+---
+
+## 🗺️ Roadmap
+
+### **Coming Soon**
+
+- [ ] Web apps for all remaining modules
+- [ ] Hindi and Odia translations
+- [ ] Video tutorials for each module
+- [ ] Advanced genomics modules (GWAS, genomic selection)
+- [ ] Mobile app versions
+- [ ] Instructor guides and assessment materials
+
+### **In Development**
+
+- Module 6: Quantitative Genetics & QTL Mapping
+- Module 7: Genomic Selection & Breeding Values
+- Module 8: Conservation Genomics
+- Case studies from Odisha biodiversity
+
+---
+
+**Built with ❤️ for students in rural colleges**  
+*Because every student deserves access to world-class genetics education*
+
+---
+
+**Last updated:** December 2024  
+**Version:** 1.0  
+**Status:** Active development
