@@ -331,7 +331,7 @@ We welcome contributions! Ways to help:
 If you use these materials in teaching or research, please cite:
 
 ```
-Alok Kumar Sahoo. (2024). Principles of Genetics Interactive: 
+Ms. Susama Kar and Dr.Alok Patel. (2024). Principles of Genetics Interactive: 
 From Mendelian Genetics to Population Genomics (v1.0). 
 Zenodo. https://doi.org/10.5281/zenodo.17887470
 ```
@@ -340,7 +340,7 @@ Zenodo. https://doi.org/10.5281/zenodo.17887470
 
 ## 📧 Contact
 
-**Alok Kumar Sahoo**  
+**Alok Patel**  
 Head, Department of Zoology  
 Kuchinda College, Sambalpur University  
 Odisha, India
@@ -378,7 +378,6 @@ Under these terms:
 ### **Coming Soon**
 
 - [ ] Web apps for all remaining modules
-- [ ] Hindi and Odia translations
 - [ ] Video tutorials for each module
 - [ ] Advanced genomics modules (GWAS, genomic selection)
 - [ ] Mobile app versions
