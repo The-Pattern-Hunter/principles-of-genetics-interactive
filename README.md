@@ -427,32 +427,7 @@ principles-of-genetics-interactive/
 
 ---
 
-## 🚀 Deployment Instructions
 
-### For Each Module:
-
-1. Go to [Streamlit Cloud](https://streamlit.io/cloud)
-2. Click "New app"
-3. Connect to this GitHub repository
-4. Select the appropriate file from `app/` folder
-5. Deploy!
-
-### Suggested App Names:
-
-- `app.py` → `genetic-mapping-main`
-- `mendelian_genetics.py` → `mendelian genetics`
-- `module_2_interference_coc_COMPLETE.py` → `interference-coc`
-- `module_3_linkage_vs_ld_COMPLETE.py` → `linkage-vs-ld`
-- `module_4_mendelian_to_population_COMPLETE.py` → `mendelian-to-population`
-- `module_5a_fst.py` → `fst-structure`
-- `module_5b_selection_signatures_COMPLETE.py` → `selection-signatures`
-- `module_5c_effective_population_size_COMPLETE.py` → `effective-population-size`
-
-### After Deployment:
-
-Update this README with actual URLs (replace `YOURAPP1`, `YOURAPP2`, etc.)
-
----
 
 ## 🤝 Contributing
 
@@ -463,7 +438,7 @@ We welcome:
 - 🌐 Translations (Hindi in progress!)
 - 🎨 App improvements
 
-**Contact:** susama.kar@kuchindacollege.ac.in
+**Contact:** aloksu@gmail.com
 
 ---
 
@@ -509,8 +484,8 @@ Zenodo. https://doi.org/10.5281/zenodo.17887470
 ## 📧 Contact
 
 **Authors:**
-- Susama Kar - susama.kar@kuchindacollege.ac.in
-- Dr. Alok Patel - alok.patel@kuchindacollege.ac.in
+- Ms. Susama Kar 
+- Dr. Alok Patel - aloksu@gmail.com
 
 **Institution:**  
 Department of Zoology, Kuchinda College  
@@ -538,13 +513,7 @@ Sambalpur University, Odisha 768222, India
 
 ## 🌟 What's New
 
-### Latest Updates:
 
-- ✅ **Module 3 ENHANCED** - Confusion breaker for Linkage vs LD!
-- ✅ **Module 4 FIXED** - Probability bug resolved
-- ✅ **8 Apps Deployed** - All modules accessible online
-- ✅ **Mobile Optimized** - Learn on any device
-- ✅ **Real Data** - Local Odisha organisms
 
 ---
 
