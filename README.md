@@ -20,6 +20,41 @@
 - ✅ **Shareable** - Send link to classmates
 
 ---
+---
+
+### 🧪 Additional Interactive Web Apps (NEW)
+
+#### 🧬 Mendelian Genetics Interactive Explorer
+
+[![Launch Mendelian Genetics App](https://img.shields.io/badge/🚀_Launch-Mendelian_Genetics_App-ff4b4b?style=for-the-badge&logo=streamlit)](https://principles-of-genetics-interactive-2pkbgi8l6tnfargre7kakp.streamlit.app/)
+
+**Focus:**
+- Monohybrid cross (3:1 ratio discovery)
+- Dihybrid cross (9:3:3:1)
+- Chi-square testing of genetic ratios
+- Interactive Punnett squares
+
+**Level:** BSc Zoology (Semester V)  
+**Mobile:** ✅ Fully responsive  
+**Pedagogy:** Discovery-based learning
+
+---
+
+#### 🌍 Population Genetics & Structure Explorer
+
+[![Launch Population Genetics App](https://img.shields.io/badge/🚀_Launch-Population_Genetics_App-2e8b57?style=for-the-badge&logo=streamlit)](https://principles-of-genetics-interactive-maxg2rtgchwugznsmrabo8.streamlit.app/)
+
+**Focus:**
+- Hardy–Weinberg equilibrium
+- Allele & genotype frequency dynamics
+- Population differentiation (FST concepts)
+- Drift vs migration intuition
+
+**Level:** BSc → MSc  
+**Mobile:** ✅ Fully responsive  
+**Use case:** Concept building before Module 5A
+
+---
 
 ### 🧬 Module 1: Genetic Mapping & Poisson Distribution
 
