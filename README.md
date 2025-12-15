@@ -1,11 +1,11 @@
 # Principles of Genetics Interactive
 
 **From Mendelian Genetics to Population Genomics**
-*A professional, open-access interactive learning platform based on Pattern Hunters pedagogy*
+*A comprehensive, open-access educational platform based on Pattern Hunters pedagogy*
 
 ---
 
-## 🔗 Live Access & Badges
+## 🔗 Live Apps & Badges
 
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/The-Pattern-Hunter/principles-of-genetics-interactive/HEAD)
 [![Streamlit App](https://img.shields.io/badge/Streamlit-Mendelian_Genetics-ff4b4b?style=for-the-badge\&logo=streamlit)](https://principles-of-genetics-interactive-2pkbgi8l6tnfargre7kakp.streamlit.app/)
@@ -15,132 +15,220 @@
 
 ---
 
-## 📘 Overview
+## 🎯 Start Learning Now
 
-**Principles of Genetics Interactive** is a comprehensive digital pedagogy platform designed to guide learners from classical Mendelian genetics to modern population genomics. The project integrates **interactive Streamlit web applications**, **Google Colab notebooks**, and **Binder-based full environments** to make genetics intuitive, visual, and concept-driven.
+### Recommended Mode: **Interactive Web Applications**
 
-This resource is aligned with **UGC–CBCS / NEP 2020 curricula** and is suitable for **BSc, MSc, research scholars, educators, and self-learners**.
+No installation. No login. Works on **mobile, tablet, and desktop** devices.
 
 ---
 
-## 🚀 Primary Learning Mode: Interactive Web Apps
+## 🧬 Mendelian Genetics Series (BSc Level)
 
-No installation. No login. Works seamlessly on **mobile, tablet, and desktop** devices.
+Designed for undergraduate students to build strong conceptual foundations in classical genetics.
 
-### 🧬 Mendelian Genetics (BSc Level)
+### Part 1: Discovering the 3:1 Ratio (Monohybrid Cross)
 
-**Monohybrid Cross Explorer**
 [Launch Streamlit App](https://principles-of-genetics-interactive-2pkbgi8l6tnfargre7kakp.streamlit.app/)
 
-* Law of Segregation
-* Punnett squares & probability
-* Binomial distribution intuition
-* Regional biological examples
+**Core questions addressed**
 
-**Level:** BSc Semester V–VI
-**Estimated Time:** 60–90 minutes
+* Why is the phenotypic ratio 3:1 and not 2:1?
+* How does segregation arise from meiosis?
+
+**Concepts covered**
+
+* Law of Segregation
+* Punnett squares
+* Probability rules
+* Binomial distribution
+* Regional biological examples (Odisha rice varieties)
+
+**Level:** BSc Semester V
+**Estimated time:** 60–90 minutes
 
 ---
 
-### 🌍 Population Genetics & Evolution (MSc / Research Level)
+### Part 2: Two Genes, Nine Phenotypes (Dihybrid Cross)
 
-**Population Genetics Explorer**
-[Launch Streamlit App](https://principles-of-genetics-interactive-maxg2rtgchwugznsmrabo8.streamlit.app/)
+*Dedicated web app under development*
+
+**Available via:**
+
+* Complete Mendelian Streamlit App
+* Google Colab notebook
+
+**Concepts covered**
+
+* Independent assortment
+* Product rule of probability
+* Phenotypic ratio derivation
+
+---
+
+### Part 3: When Genes Interact (Chi-square & Gene Interactions)
+
+*Dedicated web app under development*
+
+**Available via:**
+
+* Complete Mendelian Streamlit App
+* Google Colab notebook
+
+**Concepts covered**
+
+* Chi-square test
+* Epistasis and modified ratios
+* Statistical reasoning in genetics
+
+---
+
+## 🗺️ Genetic Mapping & Linkage
+
+Bridging classical recombination genetics with modern genomic thinking.
+
+### Module 1: Why Recombination Frequency Never Exceeds 50%
+
+[Launch Streamlit App](https://principles-of-genetics-interactive-bycwnz8xeavactkczy3tsm.streamlit.app/)
+
+**Concepts covered**
+
+* Poisson distribution in crossovers
+* Two-point and three-point crosses
+* Gene ordering
+* Interference and coincidence
+* Real mapping data (*Labeo rohita*)
+
+**Level:** BSc–MSc
+**Estimated time:** 90–120 minutes
+
+---
+
+### Module 2: Interference & Advanced Mapping
+
+*Web app under development*
+
+**Available via:** Google Colab notebook
+
+**Concepts covered**
+
+* Coefficient of coincidence
+* Haldane vs Kosambi mapping functions
+* Eight gamete classes
+
+---
+
+## 🌍 Population Genetics & Evolution
+
+Connecting Mendelian inheritance to evolutionary processes in populations.
+
+### Module 4: From Pedigrees to Populations
+
+*Web app under development*
+
+**Available via:** Google Colab notebook
+
+**Concepts covered**
 
 * Hardy–Weinberg equilibrium
-* Allele frequency dynamics
-* Genetic drift vs migration
-* FST intuition and structure concepts
-
-**Level:** MSc to Research
-**Estimated Time:** 90–120 minutes
+* Allele and genotype frequencies
+* Conceptual shift from families to populations
 
 ---
 
-## 🧪 Advanced Population Genomics Modules
+### Module 5A: Measuring Population Differentiation (FST)
 
-### 🧬 Detecting Natural Selection
+[Launch Streamlit App](https://principles-of-genetics-interactive-hw5rkq6r9dfyccmh3wgidk.streamlit.app/)
 
-* Selection signatures in populations
-* Tajima’s D and site frequency spectrum
-* Drift vs selection interpretation
+**Concepts covered**
 
-**Access:** Integrated within Population Genetics Streamlit App
+* Variance partitioning
+* Interpretation of FST
+* Migration–drift balance
+* Conservation and management applications
+
+**Level:** MSc–Research
+**Estimated time:** 90–120 minutes
 
 ---
 
-### 👥 Effective Population Size (Ne)
+### Module 5B: Detecting Natural Selection
+
+[Launch Streamlit App](https://principles-of-genetics-interactive-maxg2rtgchwugznsmrabo8.streamlit.app/)
+
+**Concepts covered**
+
+* Selection vs drift
+* Tajima’s D
+* Site frequency spectrum
+* Indian case studies (e.g., malaria, lactase persistence)
+
+---
+
+### Module 5C: Effective Population Size (Ne)
+
+[Launch Streamlit App](https://principles-of-genetics-interactive-maxg2rtgchwugznsmrabo8.streamlit.app/)
+
+**Concepts covered**
 
 * Why Ne ≠ census size
-* Bottlenecks and conservation relevance
-* 50/500 rule and applied examples
-
-**Access:** Integrated within Population Genetics Streamlit App
-
----
-
-## 📓 Jupyter & Colab Notebooks
-
-All modules are supported by executable notebooks for deeper exploration:
-
-* Mendelian genetics (Parts I–III)
-* Genetic mapping & recombination
-* Population structure & FST
-* Selection signatures
-* Effective population size
-
-▶ Run directly in **Google Colab** (no setup required)
+* Bottlenecks and founder effects
+* 50/500 rule
+* Conservation relevance
 
 ---
 
-## 🧠 Pattern Hunters Pedagogy
+## 🔬 Additional Integrated Explorers
 
-This platform follows a **concept-first, intuition-driven approach**:
+### Mendelian Genetics – Complete Suite
 
-1. **Ask “Why?” before “How?”**
-2. **Visualize patterns before equations**
-3. **Use real Indian biological datasets**
-4. **Connect scales:** gene → chromosome → population → evolution
-5. **Encourage exploration, not memorization**
+[Launch Streamlit App](https://principles-of-genetics-interactive-e6vksngpfzcaqcmzqhmcwo.streamlit.app/)
+
+Includes monohybrid, dihybrid, chi-square testing, and gene interactions in a single interface.
 
 ---
 
-## 🎓 Target Audience
+## 📱 Mobile Learning
 
-* **BSc Students:** Core genetics concepts with intuition
-* **MSc Students:** Population genetics and evolutionary inference
-* **Researchers:** Conceptual clarity behind genomic statistics
-* **Faculty:** Ready-to-use interactive teaching tools
-* **Self-learners:** Structured, self-paced progression
-
----
-
-## 📱 Mobile Compatibility
-
-All Streamlit applications are fully mobile-friendly.
+All Streamlit applications are fully optimized for smartphones and tablets.
 
 **Tip:** Add to home screen for an app-like experience.
 
 ---
 
+## 📚 Learning Pathways
+
+### Path 1: BSc Genetics Foundations
+
+1. Mendelian Part 1
+2. Mendelian Part 2
+3. Mendelian Part 3
+4. Genetic Mapping Module 1
+
+### Path 2: Population Genetics & Conservation
+
+1. Mendelian to Population transition
+2. FST and structure
+3. Effective population size
+4. Selection signatures
+
+---
+
+## 🧠 Pattern Hunters Pedagogy
+
+* Begin with **conceptual questions** rather than formulas
+* Use **visual simulations** to build intuition
+* Integrate **regional Indian biological examples**
+* Emphasize **connections across scales**: gene → population → evolution
+* Promote exploration over memorization
+
+---
+
 ## 🛠 Access Options
 
-### Quick Start (Recommended)
-
-* Click any Streamlit badge above
-
-### Binder (Full Environment)
-
-* Launch complete Jupyter environment via Binder badge
-
-### Local Installation (Advanced)
-
-```bash
-git clone https://github.com/The-Pattern-Hunter/principles-of-genetics-interactive.git
-cd principles-of-genetics-interactive
-pip install -r requirements.txt
-jupyter notebook
-```
+* **Streamlit Web Apps:** Instant learning (recommended)
+* **Google Colab:** Executable notebooks without setup
+* **Binder:** Complete Jupyter environment
 
 ---
 
@@ -149,7 +237,7 @@ jupyter notebook
 If you use this resource in teaching or research, please cite:
 
 ```
-Kar, S. and Sahoo, A. K. (2024). Principles of Genetics Interactive: 
+Kar, S. and Patel, A. (2024). Principles of Genetics Interactive:
 From Mendelian Genetics to Population Genomics (v1.0).
 Zenodo. https://doi.org/10.5281/zenodo.17887470
 ```
@@ -158,9 +246,7 @@ Zenodo. https://doi.org/10.5281/zenodo.17887470
 
 ## 📄 License
 
-This project is licensed under **Creative Commons Attribution 4.0 (CC BY 4.0)**.
-
-You are free to share, adapt, and use commercially with proper attribution.
+Licensed under **Creative Commons Attribution 4.0 (CC BY 4.0)**.
 
 ---
 
@@ -174,11 +260,7 @@ GitHub: [https://github.com/The-Pattern-Hunter](https://github.com/The-Pattern-H
 
 ---
 
-## 🌱 Vision
-
-Built to ensure that **students from rural and resource-limited institutions** have access to **world-class, interactive genetics education**.
+**Built for students in rural and resource-limited institutions**
+*World-class genetics education, freely accessible*
 
 **Last updated:** December 2024
-**Status:** Actively maintained
-
-
