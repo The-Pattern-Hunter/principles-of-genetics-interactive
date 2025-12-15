@@ -7,7 +7,83 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17887470.svg)](https://doi.org/10.5281/zenodo.17887470)
 
 ---
+## 🌐 Interactive Web Apps
 
+**NEW!** Access our complete modules as web applications - no installation needed!
+
+### Why Use the Web Apps?
+
+- ✅ **Instant Access** - Click and start learning
+- ✅ **Mobile-Friendly** - Works on phones and tablets
+- ✅ **No Setup** - No Python, Jupyter, or Colab needed
+- ✅ **Always Updated** - Latest version automatically
+- ✅ **Shareable** - Send link to classmates
+
+---
+
+### 🧬 Module 1: Genetic Mapping & Poisson Distribution
+
+[![Launch Module 1](https://img.shields.io/badge/🚀_Launch-Module_1_Web_App-blue?style=for-the-badge&logo=streamlit)](https://principles-of-genetics-interactive-bycwnz8xeavactkczy3tsm.streamlit.app/)
+
+**Interactive Features:**
+- 🎮 Single Poisson distribution explorer
+- 🎮 Four-distribution comparison
+- 🎮 RF vs Distance interactive curve
+- 🎮 Crossover simulator (adjustable parameters)
+- 🎮 Labeo rohita gene mapper
+
+**Duration:** 60-90 minutes  
+**Level:** BSc Zoology  
+**Mobile:** ✅ Fully responsive
+
+**What you'll learn:**
+- Why RF can never exceed 50%
+- Poisson distribution in crossovers
+- Gene mapping from real data
+- Three-point cross analysis
+
+---
+
+### 🌍 Module 5A: FST and Population Structure
+
+[![Launch Module 5A](https://img.shields.io/badge/🚀_Launch-Module_5A_Web_App-green?style=for-the-badge&logo=streamlit)](https://principles-of-genetics-interactive-hw5rkq6r9dfyccmh3wgidk.streamlit.app/)
+
+**Interactive Features:**
+- 🎮 Population divergence simulator
+- 🎮 Step-by-step FST calculator
+- 🎮 Drift-migration balance explorer
+- 🌍 Real data: Indian populations, Labeo rohita, cattle
+
+**Duration:** 90-120 minutes  
+**Level:** MSc / Research  
+**Mobile:** ✅ Fully responsive
+
+**What you'll learn:**
+- Calculate and interpret FST
+- Population genetic structure
+- Conservation applications
+- Migration-drift balance
+
+---
+
+### 📱 How to Use on Mobile
+
+1. **Click the badge** above
+2. **Add to Home Screen** for app-like experience:
+   - Android: Menu → "Add to Home Screen"
+   - iPhone: Share → "Add to Home Screen"
+3. **Use like a native app!**
+
+---
+
+### 💻 Alternative: Use Jupyter Notebooks
+
+Prefer traditional notebooks? We also provide:
+- **Google Colab** badges (click badges below each module)
+- **Binder** for full Jupyter environment
+- **Download** for local use
+
+---
 ## 🚀 Interactive Web App
 
 ### Mendelian Genetics Explorer
