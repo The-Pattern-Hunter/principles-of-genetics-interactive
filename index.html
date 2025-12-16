@@ -1,1 +1,785 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0">
+    <meta name="theme-color" content="#1e3a8a">
+    <meta name="description" content="Pattern Hunters: Access all 8 genetics modules">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="apple-mobile-web-app-title" content="Pattern Hunters">
+    
+    <title>Pattern Hunters: Complete Genetics Platform</title>
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ccircle cx='50' cy='50' r='45' fill='%231e3a8a'/%3E%3Ctext x='50' y='70' font-size='55' text-anchor='middle' fill='white' font-family='Arial' font-weight='bold'%3EPH%3C/text%3E%3C/svg%3E">
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            -webkit-tap-highlight-color: rgba(0,0,0,0.1);
+        }
 
+        :root {
+            --primary: #1e3a8a;
+            --secondary: #0891b2;
+            --accent: #f59e0b;
+            --success: #10b981;
+            --danger: #ef4444;
+            --background: #f8fafc;
+            --surface: #ffffff;
+            --text: #0f172a;
+            --text-light: #64748b;
+            --border: #e2e8f0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: var(--background);
+            color: var(--text);
+            line-height: 1.6;
+            padding-bottom: 2rem;
+        }
+
+        /* Header */
+        .header {
+            background: linear-gradient(135deg, var(--primary) 0%, #1e40af 100%);
+            color: white;
+            padding: 1.5rem 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header h1 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 0.25rem;
+        }
+
+        .header-subtitle {
+            font-size: 0.9rem;
+            opacity: 0.9;
+        }
+
+        /* Loading Overlay */
+        .loading-overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(0, 0, 0, 0.85);
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 9999;
+            color: white;
+        }
+
+        .loading-overlay.show {
+            display: flex;
+        }
+
+        .loading-spinner {
+            width: 60px;
+            height: 60px;
+            border: 4px solid rgba(255,255,255,0.3);
+            border-top-color: white;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin-bottom: 1.5rem;
+        }
+
+        @keyframes spin {
+            to { transform: rotate(360deg); }
+        }
+
+        .loading-text {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .loading-subtext {
+            font-size: 0.9rem;
+            opacity: 0.8;
+            text-align: center;
+            padding: 0 2rem;
+        }
+
+        .loading-tip {
+            margin-top: 2rem;
+            padding: 1rem 2rem;
+            background: rgba(245, 158, 11, 0.2);
+            border-radius: 8px;
+            font-size: 0.85rem;
+            max-width: 400px;
+            text-align: center;
+        }
+
+        /* Install Banner */
+        .install-banner {
+            background: linear-gradient(135deg, var(--accent), #f59e0b);
+            color: white;
+            padding: 1rem;
+            display: none;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+
+        .install-banner.show {
+            display: flex;
+        }
+
+        .install-btn {
+            background: white;
+            color: var(--accent);
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 6px;
+            font-weight: 600;
+            font-size: 0.9rem;
+            cursor: pointer;
+            white-space: nowrap;
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 1rem;
+        }
+
+        /* Info Card */
+        .info-card {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border-left: 4px solid var(--secondary);
+        }
+
+        .info-card h2 {
+            color: var(--primary);
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .info-card p {
+            color: var(--text-light);
+            margin-bottom: 0.5rem;
+        }
+
+        /* Tip Box */
+        .tip-box {
+            background: linear-gradient(135deg, rgba(245, 158, 11, 0.1), rgba(251, 191, 36, 0.1));
+            border-left: 4px solid var(--accent);
+            padding: 1rem;
+            border-radius: 8px;
+            margin: 1.5rem 0;
+            font-size: 0.9rem;
+        }
+
+        .tip-box strong {
+            color: var(--accent);
+            display: block;
+            margin-bottom: 0.5rem;
+        }
+
+        .stats {
+            display: flex;
+            gap: 1.5rem;
+            margin-top: 1rem;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .stat-value {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--secondary);
+        }
+
+        .stat-label {
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        /* Module Grid */
+        .modules-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-bottom: 2rem;
+        }
+
+        .module-card {
+            background: white;
+            border: 2px solid var(--border);
+            border-radius: 12px;
+            padding: 1.5rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            color: inherit;
+            display: block;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .module-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 4px;
+            background: linear-gradient(90deg, var(--secondary), var(--primary));
+            transform: scaleX(0);
+            transition: transform 0.3s ease;
+        }
+
+        .module-card:active {
+            transform: scale(0.98);
+        }
+
+        .module-card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .module-card:hover {
+            border-color: var(--secondary);
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transform: translateY(-2px);
+        }
+
+        .module-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            margin-bottom: 1rem;
+        }
+
+        .module-icon {
+            font-size: 2.5rem;
+            line-height: 1;
+        }
+
+        .module-badge {
+            background: var(--primary);
+            color: white;
+            padding: 0.25rem 0.75rem;
+            border-radius: 12px;
+            font-size: 0.75rem;
+            font-weight: 600;
+        }
+
+        .module-badge.critical {
+            background: var(--danger);
+        }
+
+        .module-badge.bridge {
+            background: var(--accent);
+        }
+
+        .module-title {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: var(--primary);
+            margin-bottom: 0.5rem;
+        }
+
+        .module-desc {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            margin-bottom: 1rem;
+            line-height: 1.5;
+        }
+
+        .module-meta {
+            display: flex;
+            gap: 1rem;
+            flex-wrap: wrap;
+            font-size: 0.85rem;
+            color: var(--text-light);
+        }
+
+        .module-meta span {
+            display: flex;
+            align-items: center;
+            gap: 0.25rem;
+        }
+
+        /* Quick Links */
+        .quick-links {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+
+        .quick-links h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .links-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 0.75rem;
+        }
+
+        .link-btn {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1rem;
+            background: var(--background);
+            border: 2px solid var(--border);
+            border-radius: 8px;
+            text-decoration: none;
+            color: var(--text);
+            font-weight: 500;
+            transition: all 0.3s ease;
+        }
+
+        .link-btn:hover {
+            border-color: var(--secondary);
+            background: var(--surface);
+        }
+
+        /* Learning Paths */
+        .learning-paths {
+            background: white;
+            border-radius: 12px;
+            padding: 1.5rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            border-left: 4px solid var(--accent);
+        }
+
+        .learning-paths h2 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .learning-paths h3 {
+            color: var(--primary);
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .learning-paths p {
+            margin-bottom: 0.5rem;
+        }
+
+        .path-desc {
+            font-size: 0.9rem;
+            color: var(--text-light);
+            font-style: italic;
+        }
+
+        /* Footer */
+        .footer {
+            background: var(--primary);
+            color: white;
+            padding: 2rem 1rem;
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 0.5rem 0;
+            opacity: 0.9;
+        }
+
+        /* Offline Indicator */
+        .offline-indicator {
+            background: var(--danger);
+            color: white;
+            padding: 0.5rem 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+            display: none;
+        }
+
+        .offline-indicator.show {
+            display: block;
+        }
+
+        /* Responsive */
+        @media (max-width: 640px) {
+            .modules-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .stats {
+                justify-content: space-between;
+            }
+
+            .header h1 {
+                font-size: 1.3rem;
+            }
+
+            .loading-text {
+                font-size: 1rem;
+            }
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .module-card {
+            animation: fadeIn 0.5s ease-out backwards;
+        }
+
+        .module-card:nth-child(1) { animation-delay: 0.05s; }
+        .module-card:nth-child(2) { animation-delay: 0.1s; }
+        .module-card:nth-child(3) { animation-delay: 0.15s; }
+        .module-card:nth-child(4) { animation-delay: 0.2s; }
+        .module-card:nth-child(5) { animation-delay: 0.25s; }
+        .module-card:nth-child(6) { animation-delay: 0.3s; }
+        .module-card:nth-child(7) { animation-delay: 0.35s; }
+        .module-card:nth-child(8) { animation-delay: 0.4s; }
+    </style>
+</head>
+<body>
+    <div class="offline-indicator" id="offline-indicator">
+        ⚠️ You're offline. Modules require internet connection.
+    </div>
+
+    <div class="install-banner" id="install-banner">
+        <div>
+            <strong>📱 Install App</strong><br>
+            <span style="font-size: 0.85rem;">Add to home screen for quick access</span>
+        </div>
+        <button class="install-btn" id="install-btn">Install</button>
+    </div>
+
+    <!-- Loading Overlay -->
+    <div class="loading-overlay" id="loading-overlay">
+        <div class="loading-spinner"></div>
+        <div class="loading-text">Loading Module...</div>
+        <div class="loading-subtext">
+            The app is waking up. This may take 30-60 seconds on first load.
+        </div>
+        <div class="loading-tip">
+            💡 <strong>Tip:</strong> Subsequent loads will be instant!
+        </div>
+    </div>
+
+    <div class="header">
+        <h1>🧬 Pattern Hunters</h1>
+        <div class="header-subtitle">Complete Genetics Platform • 8 Interactive Modules</div>
+    </div>
+
+    <div class="container">
+        <div class="info-card">
+            <h2>Distribution-First Pedagogy</h2>
+            <p><em>"Observe patterns before formulas"</em></p>
+            <p>Comprehensive genetics education from Mendelian basics to advanced population genomics. Developed for Indian university students with examples from Western Odisha.</p>
+            
+            <div class="stats">
+                <div class="stat-item">
+                    <div class="stat-value">8</div>
+                    <div class="stat-label">Modules</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">9+</div>
+                    <div class="stat-label">Hours</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">BSc→PhD</div>
+                    <div class="stat-label">Coverage</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-value">20+</div>
+                    <div class="stat-label">Widgets</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="tip-box">
+            <strong>⏱️ First-Time Load Notice:</strong>
+            If a module hasn't been accessed recently, it may take 30-60 seconds to wake up. 
+            After that, it will be instant! This is normal for free cloud hosting.
+        </div>
+
+        <h2 style="margin-bottom: 1rem; color: var(--primary);">📚 All Modules</h2>
+        
+        <div class="modules-grid">
+            <!-- Module 1 (Main) -->
+            <a href="https://principles-of-genetics-interactive-bycwnz8xeavactkczy3tsm.streamlit.app/" 
+               class="module-card" 
+               data-module="Genetic Mapping & Poisson">
+                <div class="module-header">
+                    <div class="module-icon">🗺️</div>
+                    <div class="module-badge">BSc</div>
+                </div>
+                <div class="module-title">Module 1: Genetic Mapping & Poisson</div>
+                <div class="module-desc">
+                    Why RF can't exceed 50%. Crossover events follow Poisson distribution. Essential foundation for linkage analysis.
+                </div>
+                <div class="module-meta">
+                    <span>⏱️ 90 min</span>
+                    <span>🐟 <em>Labeo rohita</em></span>
+                </div>
+            </a>
+
+            <!-- Module 1 (Alt) -->
+            <a href="https://principles-of-genetics-interactive-e6vksngpfzcaqcmzqhmcwo.streamlit.app/" 
+               class="module-card"
+               data-module="Mendelian Laws">
+                <div class="module-header">
+                    <div class="module-icon">🧬</div>
+                    <div class="module-badge">BSc</div>
+                </div>
+                <div class="module-title">Module 1B: Mendelian Laws</div>
+                <div class="module-desc">
+                    Complete/incomplete dominance, codominance, epistasis. Interactive Punnett squares and ratio discovery.
+                </div>
+                <div class="module-meta">
+                    <span>⏱️ 90 min</span>
+                    <span>⭐⭐⭐ Essential</span>
+                </div>
+            </a>
+
+            <!-- Module 2 -->
+            <a href="https://principles-of-genetics-interactive-zmgrc5jt2yfe4ihd6cyb5n.streamlit.app/" 
+               class="module-card"
+               data-module="Interference & COC">
+                <div class="module-header">
+                    <div class="module-icon">🔀</div>
+                    <div class="module-badge">MSc</div>
+                </div>
+                <div class="module-title">Module 2: Interference & COC</div>
+                <div class="module-desc">
+                    When reality violates the model! Crossover interference reveals non-independence of recombination events.
+                </div>
+                <div class="module-meta">
+                    <span>⏱️ 90 min</span>
+                    <span>🔬 Advanced</span>
+                </div>
+            </a>
+
+            <!-- Module 3 -->
+            <a href="https://principles-of-genetics-interactive-mec5jcu3jmsstlfsup4ye3.streamlit.app/" 
+               class="module-card"
+               data-module="Linkage vs LD">
+                <div class="module-header">
+                    <div class="module-icon">🔗</div>
+                    <div class="module-badge critical">⚠️ Critical</div>
+                </div>
+                <div class="module-title">Module 3: Linkage vs LD</div>
+                <div class="module-desc">
+                    THE CONFUSION BREAKER! Two names, completely different concepts. Physical location vs statistical association.
+                </div>
+                <div class="module-meta">
+                    <span>⏱️ 75 min</span>
+                    <span>💡 Must-learn</span>
+                </div>
+            </a>
+
+            <!-- Module 4 -->
+            <a href="https://principles-of-genetics-interactive--wtrtkfxxq3phbaqcj9jvpg.streamlit.app/" 
+               class="module-card"
+               data-module="Mendelian to Population">
+                <div class="module-header">
+                    <div class="module-icon">🌉</div>
+                    <div class="module-badge bridge">Bridge</div>
+                </div>
+                <div class="module-title">Module 4: Mendelian → Population</div>
+                <div class="module-desc">
+                    The "Aha!" moment. When n=1 it's random, when n→∞ patterns emerge. Punnett square becomes Hardy-Weinberg!
+                </div>
+                <div class="module-meta">
+                    <span>⏱️ 75 min</span>
+                    <span>🌉 BSc-MSc</span>
+                </div>
+            </a>
+
+            <!-- Module 5A -->
+            <a href="https://principles-of-genetics-interactive-hw5rkq6r9dfyccmh3wgidk.streamlit.app/" 
+               class="module-card"
+               data-module="FST & Structure">
+                <div class="module-header">
+                    <div class="module-icon">📊</div>
+                    <div class="module-badge">MSc</div>
+                </div>
+                <div class="module-title">Module 5A: FST & Structure</div>
+                <div class="module-desc">
+                    Measuring genetic differentiation. Wright's FST interpretation for conservation and management decisions.
+                </div>
+                <div class="module-meta">
+                    <span>⏱️ 90 min</span>
+                    <span>🐟 Populations</span>
+                </div>
+            </a>
+
+            <!-- Module 5B -->
+            <a href="https://principles-of-genetics-interactive-2pkbgi8l6tnfargre7kakp.streamlit.app/" 
+               class="module-card"
+               data-module="Selection Signatures">
+                <div class="module-header">
+                    <div class="module-icon">🧬</div>
+                    <div class="module-badge">PhD</div>
+                </div>
+                <div class="module-title">Module 5B: Selection Signatures</div>
+                <div class="module-desc">
+                    Detecting adaptive evolution. Tajima's D, SFS analysis. Real examples: lactase, malaria, altitude.
+                </div>
+                <div class="module-meta">
+                    <span>⏱️ 105 min</span>
+                    <span>🔬 Research</span>
+                </div>
+            </a>
+
+            <!-- Module 5C -->
+            <a href="https://principles-of-genetics-interactive-maxg2rtgchwugznsmrabo8.streamlit.app/" 
+               class="module-card"
+               data-module="Effective Ne">
+                <div class="module-header">
+                    <div class="module-icon">🔢</div>
+                    <div class="module-badge">PhD</div>
+                </div>
+                <div class="module-title">Module 5C: Effective Ne</div>
+                <div class="module-desc">
+                    Why Ne &lt; N always. The 50/500 rule for conservation genetics. Critical for management planning.
+                </div>
+                <div class="module-meta">
+                    <span>⏱️ 75 min</span>
+                    <span>🌊 Dam effects</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="quick-links">
+            <h3>📖 Additional Resources</h3>
+            <div class="links-grid">
+                <a href="https://github.com/The-Pattern-Hunter/principles-of-genetics-interactive" 
+                   class="link-btn" target="_blank" rel="noopener noreferrer">
+                    <span>📚</span> GitHub Repo
+                </a>
+                <a href="https://doi.org/10.5281/zenodo.17887470" 
+                   class="link-btn" target="_blank" rel="noopener noreferrer">
+                    <span>🎓</span> Cite (DOI)
+                </a>
+                <a href="https://github.com/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/guides/TEACHING_GUIDE.md" 
+                   class="link-btn" target="_blank" rel="noopener noreferrer">
+                    <span>👨‍🏫</span> Teaching
+                </a>
+                <a href="https://github.com/The-Pattern-Hunter/principles-of-genetics-interactive/blob/main/guides/STUDENT_GUIDE.md" 
+                   class="link-btn" target="_blank" rel="noopener noreferrer">
+                    <span>📝</span> Student
+                </a>
+            </div>
+        </div>
+
+        <div class="learning-paths">
+            <h2>🎯 Recommended Learning Paths</h2>
+            
+            <h3>📘 BSc Students</h3>
+            <p>Module 1 (or 1B) → Module 2 → Module 4</p>
+            <p class="path-desc">Time: 4-5 hours • Focus: Foundation + Bridge</p>
+
+            <h3>📗 MSc Students</h3>
+            <p>Review 1-2 → Module 4 → Module 3 ⚠️ → Modules 5A-C</p>
+            <p class="path-desc">Time: 9+ hours • Focus: Classical to Genomics</p>
+
+            <h3>📕 PhD/Research</h3>
+            <p>Quick review → Deep dive: Modules 3, 5B, 5C</p>
+            <p class="path-desc">Time: Variable • Focus: Research Applications</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p><strong>Pattern Hunters Biology Series</strong></p>
+        <p>Ms. Susama Kar & Dr. Alok Patel</p>
+        <p>Department of Zoology, Kuchinda College</p>
+        <p>Sambalpur University, Odisha, India</p>
+        <p style="margin-top: 1rem; font-size: 0.9rem;">
+            📖 CC BY 4.0 • Made with 💚 in Western Odisha
+        </p>
+    </div>
+
+    <script>
+        // Show loading overlay when clicking module links
+        document.querySelectorAll('.module-card').forEach(card => {
+            card.addEventListener('click', (e) => {
+                const moduleName = card.getAttribute('data-module');
+                const loadingOverlay = document.getElementById('loading-overlay');
+                const loadingText = document.querySelector('.loading-text');
+                
+                loadingText.textContent = `Loading ${moduleName}...`;
+                loadingOverlay.classList.add('show');
+                
+                console.log('Module opened:', moduleName);
+                
+                // Hide overlay after 3 seconds (app should be loading in new tab)
+                setTimeout(() => {
+                    loadingOverlay.classList.remove('show');
+                }, 3000);
+            });
+        });
+
+        // PWA Install prompt
+        let deferredPrompt;
+        const installBanner = document.getElementById('install-banner');
+        const installBtn = document.getElementById('install-btn');
+
+        window.addEventListener('beforeinstallprompt', (e) => {
+            e.preventDefault();
+            deferredPrompt = e;
+            installBanner.classList.add('show');
+        });
+
+        installBtn.addEventListener('click', async () => {
+            if (!deferredPrompt) return;
+            deferredPrompt.prompt();
+            const { outcome } = await deferredPrompt.userChoice;
+            console.log(`Install ${outcome}`);
+            deferredPrompt = null;
+            installBanner.classList.remove('show');
+        });
+
+        // Online/Offline detection
+        const offlineIndicator = document.getElementById('offline-indicator');
+
+        function updateOnlineStatus() {
+            if (!navigator.onLine) {
+                offlineIndicator.classList.add('show');
+            } else {
+                offlineIndicator.classList.remove('show');
+            }
+        }
+
+        window.addEventListener('online', updateOnlineStatus);
+        window.addEventListener('offline', updateOnlineStatus);
+        updateOnlineStatus();
+    </script>
+</body>
+  </html>
